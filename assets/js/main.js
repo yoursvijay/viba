@@ -281,7 +281,13 @@
         slidesPerView: 1,
         spaceBetween: 40
       },
-
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
       1200: {
         slidesPerView: 4,
         spaceBetween: 0,
