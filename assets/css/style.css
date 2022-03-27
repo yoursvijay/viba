@@ -16,7 +16,9 @@ body {
   font-family: "Gilroy-Regular", sans-serif;
   color: #12152F;
 }
-
+a, button, input[type=submit], input[type=reset] {
+  cursor:url('../img/icons/cursor.svg'), auto;
+}
 a {
   color: #4154f1;
   text-decoration: none;
@@ -42,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  /* padding: 60px 0; */
   overflow: hidden;
 }
 @media screen and (min-width:1440px){
@@ -472,6 +474,9 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
+.clients{
+  padding: 0 0 60px;
+}
 .swiper-container{
   position: relative;
   min-height: 110px;
@@ -485,6 +490,10 @@ section {
 }
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
   background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%) !important;
+}
+
+.works{
+  padding: 60px 0;
 }
 .works .work-demo h2{
   font-size: 104px;
@@ -505,6 +514,8 @@ section {
   display: inline-block;
   margin-top: 45px;
   padding: 16px 57px;
+  box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
+  -webkit-box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
 }
 
 /* works */
@@ -597,6 +608,9 @@ section {
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+.features{
+  padding: 60px 0;
+}
 .features .features-main-tabs {
   border-bottom: 2px solid rgba(39, 16, 25, 0.06);
 }
@@ -730,7 +744,8 @@ section {
   display: inline-block;
   margin-top: 22px;
   margin-left: 50px;
-  box-shadow: 0px 14px 16px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
+  box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
+  -webkit-box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
 }
 .features-main-content{
   margin-top: 90px;
@@ -740,6 +755,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+.kiosk{
+  padding: 60px 0 130px;
+}
 .kiosk .kiosk-row{
   position: relative;
 }
@@ -846,13 +864,14 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 120px;
 }
 .mob-app-links{
   position: relative;
   width: 100%;
   height: auto;
   display: block;
-  margin: 50px 0 0;
+  margin: 25px 0 0;
 }
 .mob-app-links [data-bs-target]{
   text-indent: initial;
@@ -943,6 +962,7 @@ section {
 }
 .mobile-app .primary-btn{
   box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
+  -webkit-box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
   display: inline-block;
   width:auto;
   margin: 50px auto 40px;
@@ -992,6 +1012,7 @@ section {
 /* virtualexp */
 .virtualexp{
   background-color: #292D57;
+  padding: 114px 0;
 }
 
 .vid-tabs li button{
@@ -1046,8 +1067,9 @@ section {
 }
 .virtualexp .virtual-vid-txt .primary-btn{
   display: inline-block;
-  box-shadow: 0px 14px 17px rgba(0, 0, 0, 0.25), 0px 22px 28px -15px rgba(0, 0, 0, 0.2);
   margin: 50px 0 16px;
+  box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
+  -webkit-box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
 }
 .circle-vid{
   min-width: 546px;
@@ -1099,6 +1121,9 @@ section {
 }
 
 /* View plans */
+.plans-sec{
+  padding: 114px 0 217px;
+}
 /* Switch */
 .switches-container {
   width: 230px;
@@ -1231,22 +1256,43 @@ section {
   margin-left: 22px;
 }
 
-.plansSwiper .plan-card .secondary-btn{
+.plansSwiper .plan-card .plan-btn{
     min-width: 152px;
     height: 56px;
     padding: 4px 20px;
-    border: 4px solid #000;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    margin: 16px 0 20px;
+    /* margin: 16px 0 20px; */
+    position: relative;
 }
-.plansSwiper .plan-card .secondary-btn span{
+.plansSwiper .plan-card .plan-btn span{
   font-family: 'Gilroy-Bold';
   font-size: 16px;
   line-height: 150%;
   color: #12152F;
+}
+.plan-btn::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius:50px; 
+  padding:3px; 
+  background:linear-gradient(45deg,red,blue); 
+  mask:linear-gradient(#fff 0 0) content-box, 
+  linear-gradient(#fff 0 0);
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude; 
+}
+.plansSwiper .plan-card .primary-btn{
+  display: inline-block;
+  padding: 16px 33px;
+  box-shadow: 0px 22px 28px -15px rgba(0, 0, 0, 0.2);
 }
 
 /* Industries */
@@ -1255,6 +1301,11 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 216px 0 138px;
+}
+.industries .section-header{
+  position: absolute;
+  top: 80px;
 }
 .industries div.row{
   align-items: flex-end;
@@ -1327,7 +1378,7 @@ section {
   margin-right: 1rem;
 }
 .industries a.primary-btn{
-  margin: 92px 0 34px;
+  margin: 92px 0 16px;
   box-shadow: 0px 22px 28px -15px rgba(0, 0, 0, 0.2);
 }
 
@@ -1478,6 +1529,9 @@ section {
 
 
 /* Support */
+.support-sec{
+  padding: 170px 0 134px;
+}
 .support-sec .template-width{
   padding: 0 152px;
 }
@@ -1527,7 +1581,7 @@ section {
 .support-sec ul{
   list-style: none;
   padding-left: 0;
-  margin: 100px 0 150px;
+  margin: 100px 0 16px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -1558,6 +1612,9 @@ section {
 }
 
 /* Request demo */
+.req-demo{
+  margin-bottom: 170px;
+}
 .req-demo-body{
   min-height: 616px;
   background: #12152F;
