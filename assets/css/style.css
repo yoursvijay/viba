@@ -316,10 +316,19 @@ section {
 }
 
 @media (max-width: 991px) {
+  .navbar{
+    display: block;
+    background-image: url("../img/mob-app-bg.svg");
+  }
+  .navbar ul.lastul{
+    top: auto;
+  }
+  .navbar ul li .getstarted{
+    display: inline-block;
+  }
   .mobile-nav-toggle {
     display: block;
   }
-
   .navbar ul {
     display: none;
   }
@@ -331,7 +340,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(1, 22, 61, 0.9);
+  background:linear-gradient(287deg, #F10877 5.28%, #9702E5 100%);
   transition: 0.3s;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -348,17 +357,17 @@ section {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  /* background-color: red; */
   overflow-y: auto;
   transition: 0.3s;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #012970;
+  color: #ffffff;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #4154f1;
+  color: #ffffff;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -690,6 +699,7 @@ section {
   border: 1px solid #12152F !important;
   border-radius: 4px;
   margin-bottom: 16px !important;
+  background-color: transparent !important;
 }
 .v-feature-nav > div button h4{
   font-family: "Gilroy-Semibold";
@@ -760,7 +770,7 @@ section {
   border-radius: 25px;
   padding: 37px 42px;
   box-sizing: border-box;
-  height: 466px;
+  min-height: 466px;
 }
 .kiosk-1 .row{
   align-items: flex-end;
@@ -775,7 +785,7 @@ section {
   padding: 37px 42px;
   box-sizing: border-box;
   color: #12152F;
-  height: 303px;
+  min-height: 303px;
   overflow: hidden;
 }
 .kiosk-2 .row{
@@ -802,7 +812,7 @@ section {
   padding: 37px 42px 0;
   box-sizing: border-box;
   color: #12152F;
-  height: 466px;
+  min-height: 466px;
   position: relative;
   margin-top: 17px;
 }
@@ -819,7 +829,7 @@ section {
   right: 33px;
 }
 .kiosk-4{
-  height: 628px;
+  min-height: 634px;
   background: linear-gradient(181.94deg, #646263 70.42%, #5C5A5B 100.83%);
   color: #ffffff;
   border-radius: 25px;
@@ -1004,6 +1014,7 @@ section {
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
 }
 .vid-tabs li button span{
   font-family: 'Gilroy-Bold';
