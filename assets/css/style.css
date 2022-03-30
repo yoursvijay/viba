@@ -135,6 +135,9 @@ section {
 .primary-btn, .primary-btn:hover{
   color: #ffffff;
 }
+.primary-btn:hover{
+  background: linear-gradient(94.49deg,#9702E5 5.28%, #F10877 100%);
+}
 
 
 /*--------------------------------------------------------------
@@ -149,9 +152,14 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  transition: all 0.5s;
+  transition: all 0.4s;
   z-index: 997;
   padding: 60px 0;
+}
+@media screen and (max-width:1440px){
+    .header{
+      padding: 30px 0;
+    }
 }
 .header.header-scrolled {
   background: #fff;
@@ -213,6 +221,9 @@ section {
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #F10877;
 }
+.navbar li:hover .getstarted {
+  color: #ffffff !important;
+}
 .navbar .getstarted, .navbar .getstarted:focus {
   background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%);
   padding: 14px 50px;
@@ -223,6 +234,9 @@ section {
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #fff;
+}
+.navbar .getstarted:hover{
+  background: linear-gradient(94.49deg,#9702E5 5.28%,  #F10877 100%);
 }
 .navbar .dropdown ul {
   display: block;
@@ -604,10 +618,11 @@ section {
   border-radius: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   transition: 0s;
   cursor: pointer;
   height: 100%;
+  transition: all 0.5s;
 }
 .features .features-main-tabs .nav-link div{
   margin-left: 5px;
@@ -627,7 +642,20 @@ section {
 }
 
 .features .features-main-tabs .nav-link.active {
-  transition: 0.3s;
+  transition:all 0.3s;
+  position: relative;
+}
+.features .features-main-tabs .nav-link.active::after{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: -3px;
+  border-radius:0;
+  background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%);
+  transition: all 0.5s;
 }
 .features .features-main-tabs .nav-link.active img:nth-child(1){
   display: none;
@@ -1112,6 +1140,7 @@ section {
   text-align: center;
   cursor: pointer;
   color: #000;
+  user-select: none;
 }
 .switch-wrapper {
   position: absolute;
@@ -1121,6 +1150,7 @@ section {
   padding: 4px;
   z-index: 3;
   transition: transform .5s cubic-bezier(.77, 0, .175, 1);
+  user-select: none;
 }
 .switch {
   border-radius: 12px;
@@ -1136,7 +1166,7 @@ section {
   text-align: center;
   opacity: 0;
   display: block;
-  color: #232634 ;
+  color: #F10877 ;
   transition: opacity .2s cubic-bezier(.77, 0, .175, 1) .125s;
   will-change: opacity;
   position: absolute;
@@ -1243,6 +1273,18 @@ section {
   -webkit-mask-composite: xor;
   mask-composite: exclude; 
 }
+
+.plansSwiper .plan-btn:hover .plan-btn::before{
+  padding: 7px;
+  background:linear-gradient(45deg,blue,red); 
+  mask:linear-gradient(#000 0 0) content-box, 
+  linear-gradient(#000 0 0);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude; 
+
+}
+
 .plansSwiper .plan-card .primary-btn{
   display: inline-block;
   padding: 16px 33px;
@@ -1433,6 +1475,9 @@ section {
 }
 .testIndicators .active img{
   padding: 6px !important;
+  background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%);
+  border-radius: 50%;
+  transition: all 0.4s;
 } 
 .testIndicators button img{
   max-width: 100%;
