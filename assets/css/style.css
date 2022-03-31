@@ -152,7 +152,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  transition: all 0.4s;
+  transition: all 0.2s;
   z-index: 997;
   padding: 60px 0;
 }
@@ -1266,23 +1266,22 @@ section {
   bottom:0;
   border-radius:50px; 
   padding:3px; 
-  background:linear-gradient(45deg,red,blue); 
-  mask:linear-gradient(#fff 0 0) content-box, 
-  linear-gradient(#fff 0 0);
+  background:linear-gradient(45deg,#F10877,#9702E5); 
+  mask:linear-gradient(#fff 45deg 45deg) content-box, 
+  linear-gradient(#fff 45deg 45deg);
   -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude; 
 }
 
-.plansSwiper .plan-btn:hover .plan-btn::before{
-  padding: 7px;
-  background:linear-gradient(45deg,blue,red); 
-  mask:linear-gradient(#000 0 0) content-box, 
-  linear-gradient(#000 0 0);
-  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude; 
-
+.plan-btn:hover::before{
+  -webkit-mask:none !important; 
+  mask:none !important; 
+  z-index: -1;
+  color: #ffffff;
+}
+.plan-btn:hover::before , .plan-btn:hover span{
+  color: #ffffff !important;
 }
 
 .plansSwiper .plan-card .primary-btn{
