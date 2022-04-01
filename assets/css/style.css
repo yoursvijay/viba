@@ -525,7 +525,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients{
-  padding: 0 0 60px;
+  padding: 60px 0;
 }
 .swiper-container{
   position: relative;
