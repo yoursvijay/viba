@@ -431,6 +431,10 @@ section {
 --------------------------------------------------------------*/
 .hero{
   height: 100vh;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero .container-fluid, .hero .container-fluid .row{
   height: 100%;
@@ -680,17 +684,20 @@ section {
   transition:all 0.3s;
   position: relative;
 }
-.features .features-main-tabs .nav-link.active::after{
+.features .features-main-tabs .nav-link::after{
   content: '';
   position: absolute;
   display: block;
   height: 4px;
-  width: 100%;
+  width: 0;
   left: 0;
   bottom: -3px;
   border-radius:0;
   background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%);
   transition: all 0.5s;
+}
+.features .features-main-tabs .nav-link.active::after{
+  width: 100%;
 }
 .features .features-main-tabs .nav-link.active img:nth-child(1){
   display: none;
@@ -854,7 +861,7 @@ section {
   right: 33px;
 }
 .kiosk-4{
-  min-height: 634px;
+  min-height: 620px;
   background: linear-gradient(181.94deg, #646263 70.42%, #5C5A5B 100.83%);
   color: #ffffff;
   border-radius: 25px;
@@ -864,7 +871,7 @@ section {
 .kiosk-4-col{
   position: absolute;
   right: 0;
-  top: 320px;
+  top: 336px;
 }
 .kiosk-4 .row{
   margin-top: 90px;
