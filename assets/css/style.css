@@ -825,7 +825,7 @@ section {
   padding: 37px 42px;
   box-sizing: border-box;
   color: #12152F;
-  min-height: 303px;
+  height: 303px;
   overflow: hidden;
 }
 .kiosk-2 .row{
@@ -852,7 +852,7 @@ section {
   padding: 37px 42px 0;
   box-sizing: border-box;
   color: #12152F;
-  min-height: 466px;
+  height: 466px;
   position: relative;
   margin-top: 17px;
 }
@@ -869,7 +869,7 @@ section {
   right: 33px;
 }
 .kiosk-4{
-  min-height: 622px;
+  height: 622px;
   background: linear-gradient(181.94deg, #646263 70.42%, #5C5A5B 100.83%);
   color: #ffffff;
   border-radius: 25px;
@@ -1050,28 +1050,33 @@ section {
   position: relative;
 }
 .vid-tabs li button div{
-  width: 120px;
-  height: 120px;
+  width: 152px;
+  height: 152px;
+  padding: 15px 10px 0;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+}
+.vid-tabs li button div img{
+  max-width: 100%;
+  border-radius: 50%;
 }
 .vid-tabs li button span{
   font-family: 'Gilroy-Bold';
   font-size: 18px;
   line-height: 130%;
   display: inline-block;
-  margin-top: 17px;
   line-height: normal;
   color: #ffffff;
   white-space: nowrap;
 }
-.vid-tabs li button.active::after{
+
+.vid-tabs li button.active div::after{
   content: url("../img/icons/ellipse.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 2%;
-  top: -3%;
+  top:0;
 }
 
 .virtualexp .section-header h2,
@@ -1125,6 +1130,7 @@ section {
   position: absolute;
   flex-direction: column;
   left: 1%;
+  top: 0;
   z-index: 1;
 }
 .vid-tabs::after{
@@ -1133,21 +1139,22 @@ section {
   left: 48px;
   top: 80px;
   z-index: -1;
+  transform: rotate(4deg);
 }
 .vid-tabs li:not(:last-child){
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .vid-tabs li:nth-child(1){
   margin-left: 70px;
 }
 .vid-tabs li:nth-child(2){
-  margin-left: -23px;
+  margin-left: -30px;
 }
 .vid-tabs li:nth-child(3){
-  margin-left: 0;
+  margin-left: -10px;
 }
 .vid-tabs li:nth-child(4){
-  margin-left: 120px;
+  margin-left: 126px;
 }
 
 /*--------------------------------------------------------------
@@ -1486,7 +1493,9 @@ section {
   line-height: 150%;
   color: #FFFFFF;
 }
-
+.testIndicatorsMobile{
+  display: none;
+}
 .testIndicators{
   position: relative;
   height: 100%;

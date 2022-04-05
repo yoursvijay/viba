@@ -171,6 +171,35 @@
     .features .features-main-tabs .nav-link.active h4{
         color: #ffffff;;
     }
+    .support-sec header .support-img{
+        display: block;
+        text-align: center;
+    }
+    .support-sec header .support-img img{
+        position: relative;
+    }
+    .support-sec header .support-img::after{
+        top: unset;
+        bottom: -10%;
+        right: 22%;
+    }
+    .vid-container .tab-content{
+        margin-top: 2rem;
+    }
+    .circle-vid{
+        margin: 2rem 1rem ;
+    }
+    .testIndicators > div:nth-child(1), .testIndicators > div:nth-child(3){
+        gap:0
+    }
+    .testIndicators button{
+        min-width: 80px;
+        min-height: 80px;
+    }
+    .testIndicators .active::before{
+        width: 80px;
+        height: 80px;
+    }
     .v-feature-nav .primary-btn{
         margin-left: 0;
         margin-bottom: 30px;
@@ -179,6 +208,7 @@
         position: unset;
         flex-direction: row;
         align-items: baseline;
+        justify-content: center;
     }
     .vid-tabs::after{
         display: none;
@@ -230,31 +260,15 @@
         flex-direction: column;
         min-height: auto;
     }
-    .circle-vid{
-        margin: 2rem auto ;
+
+    .kiosk-1,.kiosk-2, .kiosk-3,.kiosk-4{
+        min-height: auto;
+        height: auto;
+        padding: 30px 16px;
+        border-radius: 12px;
     }
-    .testIndicators > div:nth-child(1), .testIndicators > div:nth-child(3){
-        gap:0
-    }
-    .testIndicators button{
-        min-width: 80px;
-        min-height: 80px;
-    }
-    .testIndicators .active::before{
-        width: 80px;
-        height: 80px;
-    }
-    .support-sec header .support-img{
-        display: block;
-        text-align: center;
-    }
-    .support-sec header .support-img img{
-        position: relative;
-    }
-    .support-sec header .support-img::after{
-        top: unset;
-        bottom: -10%;
-        right: 22%;
+    .kiosk-1 .row,.kiosk-2 .row, .kiosk-3 .row,.kiosk-4 .row{
+        margin-top: 40px;
     }
     
 }
@@ -266,19 +280,14 @@
     .testIndicators{
         display: none;
     }
+    .testIndicatorsMobile{
+        display: flex !important;
+    }
 }
 
 @media screen and (max-width:575px) {
     .hero .hero-content .btn-row{
         flex-direction: column;
         align-items: flex-start;
-    }
-    .kiosk-1,.kiosk-2, .kiosk-3,.kiosk-4{
-        min-height: auto;
-        padding: 30px 16px;
-        border-radius: 12px;
-    }
-    .kiosk-1 .row,.kiosk-2 .row, .kiosk-3 .row,.kiosk-4 .row{
-        margin-top: 40px;
     }
 }
