@@ -251,7 +251,9 @@ section {
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #F10877;
 }
-
+.navbar li .getstarted{
+  margin-right: 0;
+}
 .navbar li:hover .getstarted {
   color: #ffffff !important;
 }
@@ -429,8 +431,14 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+@media screen and (min-width:1441px){
+  .hero{
+    height: 100vh;
+    padding: 1.5rem 0 0 !important;
+  }
+}
 .hero{
-  height: 100vh;
+  padding: 9.375rem 0;
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -525,7 +533,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients{
-  padding: 60px 0;
+  padding:60px 0;
 }
 .swiper-container{
   position: relative;
@@ -861,7 +869,7 @@ section {
   right: 33px;
 }
 .kiosk-4{
-  min-height: 620px;
+  min-height: 622px;
   background: linear-gradient(181.94deg, #646263 70.42%, #5C5A5B 100.83%);
   color: #ffffff;
   border-radius: 25px;
@@ -871,7 +879,7 @@ section {
 .kiosk-4-col{
   position: absolute;
   right: 0;
-  top: 336px;
+  bottom: 0;
 }
 .kiosk-4 .row{
   margin-top: 90px;
@@ -1033,7 +1041,7 @@ section {
 --------------------------------------------------------------*/
 .virtualexp{
   background-color: #292D57;
-  padding: 114px 0;
+  padding: 114px 0 215px;
 }
 
 .vid-tabs li button{
@@ -1203,6 +1211,7 @@ section {
 .switch div {
   font-family: "Gilroy-Bold";
   font-size: 14px;
+  line-height: 1;
   width: 100%;
   height: 100%;
   text-align: center;

@@ -1,3 +1,86 @@
+@media screen and (max-width:1366px) {
+    .navbar a, .navbar a:focus{
+        font-size: 14px;
+    }
+    .hero{
+        padding:7rem 0;
+    }
+    .hero .hero-content h1{
+        font-size: 38px;
+    }
+    .hero .hero-content ul{
+        margin: 38px 0;
+    }
+    .hero .hero-content ul li{
+        margin: 18px 0;
+    }
+    .hero .hero-content ul li span{
+        font-size: 14px;
+    }
+    .section-header h2{
+        font-size: 32px;
+    }
+    .works .work-demo h2{
+        font-size: 80px;
+    }
+    .works .work-demo p,.features .features-main-tabs .nav-link h4,.v-feature-nav > div button h4{
+        font-size: 16px;
+    }
+    .vid-tabs li button span{
+        font-size: 16px;
+    }
+    .kiosk .kiosk-row h4{
+        font-size: 20px;
+    }
+    .kiosk .kiosk-row p{
+        font-size: 14px;
+    }
+    .virtualexp .virtual-vid-txt h3{
+        font-size: 24px;
+    }
+    .virtualexp .virtual-vid-txt p{
+        font-size: 16px;
+    }
+    .plansSwiper .plan-card h2{
+        font-size: 24px;
+    }
+    .testimonialContainer .carousel-item p{
+        font-size: 16px;
+    }
+    .ind-card-one .card-txt h3{
+        font-size: 18px;
+    }
+    .ind-card-one .card-txt p{
+        font-size: 14px;
+    }
+    .support-sec{
+        padding: 60px 0 90px;
+    }
+    .support-sec header h2{
+        font-size: 90px;
+    }
+    .support-sec h4{
+        font-size: 16px;
+    }
+    .support-sec span{
+        font-size: 14px;
+    }
+    .req-demo{
+        margin-bottom: 80px;
+    }
+    .req-demo h2{
+        font-size: 54px;
+    }
+    .req-demo p{
+        font-size: 16px;
+    }
+    .footer .footer-top{
+        padding: 60px 0;
+    }
+    .footer-bottom{
+        padding: 40px 0;
+    }
+}
 @media screen and (max-width:1200px){
     .v-feature-nav > div button{
         width: 100%;
@@ -23,6 +106,7 @@
     .support-sec .template-width{
         padding: 0 16px;
     }
+
 }
 @media screen and (max-width:1024px){
     .navbar li a:after{
