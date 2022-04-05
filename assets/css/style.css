@@ -1550,7 +1550,7 @@ section {
 # Support Section
 --------------------------------------------------------------*/
 .support-sec{
-  padding: 170px 0 134px;
+  padding:134px 0;
 }
 .support-sec .template-width{
   padding: 0 152px;
