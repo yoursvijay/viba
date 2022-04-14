@@ -438,12 +438,14 @@ section {
   }
 }
 .hero{
+  position: relative;
   padding: 9.375rem 0;
-  /* background-image: url("../img/hero-bg.png");
+  background-image: url("../img/banner-gif.gif");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
+  background-position: right bottom;
+  background-size: 60% 65%;
 }
+
 .hero .container-fluid, .hero .container-fluid .row{
   height: 100%;
 }
