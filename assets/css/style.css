@@ -459,6 +459,7 @@ section {
 .hero .hero-content h2{
   font-family: "Gilroy-Medium";
   font-size: 16px;
+  line-height: 1.6;
 }
 .hero .hero-content ul{
   list-style: none;
@@ -734,7 +735,7 @@ section {
 .v-feature-nav > div button{
   position: relative;
   text-align: left;
-  width: 412px;
+  width: 100%;
   padding: 25px 36px;
   border: 1px solid #12152F !important;
   border-radius: 4px;
