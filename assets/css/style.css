@@ -155,6 +155,7 @@ section {
   transition: all 0.2s;
   z-index: 997;
   padding: 60px 0;
+  background-color: #ffffff;
 }
 @media screen and (max-width:1440px){
     .header{
@@ -688,7 +689,7 @@ section {
   line-height: 0;
 }
 .features .features-main-tabs .nav-link h4 {
-  font-family: "Gilroy-semibold";
+  font-family: "Gilroy-Semibold";
   font-size: 18px;
   margin: 10px 0 0 0;
   color: #12152F;
@@ -1786,3 +1787,95 @@ section {
   display: block;
 }
 
+
+/* privacy-policy */
+.privacy-policy{margin: 152px 0;}
+.privacy-policy h2{
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 30px 0 10px;
+}
+.privacy-policy h3{
+  font-family: "Gilroy-Semibold";
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.privacy-policy h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  font-style: italic;
+}
+.privacy-policy p{
+  font-family: "Gilroy-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  color: #707070;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+
+@media screen and (max-width:1440px) {
+  .privacy-policy{margin: 100px 0;}
+}
+
+@media screen and (max-width:1024px) {
+  .privacy-policy{margin: 90px 0;}
+}
+@media screen and (max-width:991px) {
+  .privacy-policy{margin-top: 20px;}
+  .privacy-policy h2{font-size: 20px;}
+  .privacy-policy h3{font-size: 18px;}
+  .privacy-policy h4{font-size: 18px;}
+}
+@media screen and (max-width:768px) {
+  .privacy-policy{margin-top: 100px;}
+}
+
+
+
+
+
+.evaa-modal{
+  padding-right:0 !important;
+  z-index: 999999;
+}
+.evaa-modal .modal-dialog{
+  max-width: 100%;
+  margin: 0;
+}
+.evaa-modal .modal-dialog .modal-content{
+  height: 100vh;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+}
+.video-modal .modal-dialog .modal-content .modal-body video{
+  height: 100vh;
+  outline: none;
+}
+.video-modal .modal-dialog .modal-content .modal-body:focus{
+  outline: none;
+}
+.close-modal{
+  position: absolute;
+  right: 16px;
+  top: 75px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #57545A;
+  z-index: 999;
+  stroke: 2px;
+  padding: 10px 30px;
+  background-color: #FF0062;
+  border-radius: 4px;
+  color: #fff;
+}
+.close-modal:hover{
+  color: #fff !important;
+}

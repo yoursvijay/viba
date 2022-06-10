@@ -7,6 +7,9 @@
 (function() {
   "use strict";
 
+
+
+
   /**
    * Easy selector helper function
    */
@@ -288,3 +291,46 @@ function check() {
   }
 }
 check();
+
+
+
+// const myModalEl = document.getElementById('videoModal')
+// myModalEl.addEventListener('hidden.bs.modal', event => {
+//   var $if = $(event.delegateTarget).find('iframe');
+//   var src = $if.attr("src");
+//   $if.attr("src", '/index.html');
+//   $if.attr("src", src);
+// })
+
+//   // modal js start
+//   $('#videoModal').on('hide.bs.modal', function(e) {    
+//     alert('hello');
+//     var $if = $(e.delegateTarget).find('iframe');
+//     var src = $if.attr("src");
+//     $if.attr("src", '/index.html');
+//     $if.attr("src", src);
+//     }); 
+
+
+// $('#videoModal').on('shown.bs.modal', function () {
+//   $('.video-modal').modal('show')
+// })
+
+// var myModalEl = document.getElementById('videoModal')
+// myModalEl.addEventListener('hide.bs.modal', function (event) {
+//   // do something...
+// })
+
+  // modal js start
+  $('#videoModal').on('hidden.bs.modal', function(e) {    
+    var $if = $(e.delegateTarget).find('iframe');
+    var src = $if.attr("src");
+    $if.attr("src", '/index.html');
+    $if.attr("src", src);
+  });
+
+
+  // var myModal = document.getElementById('videoModal')
+  // myModal.addEventListener('hidden.bs.modal', function () {
+  //   alert('hello')
+  // })
