@@ -322,7 +322,7 @@ check();
 // })
 
   // modal js start
-  $('#videoModal').on('hidden.bs.modal', function(e) {    
+  $('.video-modal').on('hidden.bs.modal', function(e) {    
     var $if = $(e.delegateTarget).find('iframe');
     var src = $if.attr("src");
     $if.attr("src", '/index.html');
