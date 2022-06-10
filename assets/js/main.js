@@ -334,3 +334,38 @@ check();
   // myModal.addEventListener('hidden.bs.modal', function () {
   //   alert('hello')
   // })
+
+  $( '.side-by-side-carousel .mobile-section' ).addClass( 'with-slick-arrows' ).slick( {
+    mobileFirst: true,
+    slidesToShow: 1,
+    dots: true,
+    centerPadding: "6px",
+    focusOnSelect: true
+  } );
+
+
+  $( function () {
+
+    $( '.side-by-side-carousel .mobile-section' ).addClass( 'with-slick-arrows' ).slick( {
+      mobileFirst: true,
+      slidesToShow: 1,
+      dots: true,
+      centerPadding: "6px",
+      focusOnSelect: true
+    } );
+
+    $( '.side-by-side-carousel .slide-text' ).on( 'mouseover click', function () {
+      if ( ! $( this ).hasClass( 'active' ) ) {
+        var index = $( this ).data( 'slide-index' );
+  
+        $( '[data-slide-index]' ).removeClass( 'active' ).find( '.description' ).css( { opacity: 0 } ).animate( { height: 0 }, { queue: false, duration: 500 } );
+        $( '[data-slide-index="' + index + '"]' ).each( function () {
+          $( this ).addClass( 'active' );
+          var $desc = $( this ).find( '.description' ).css( { height: '' } );
+          $desc.animate( { height: $desc.height() }, { duration: 500, queue: false } ).delay( 100 ).animate( { opacity: 1 }, 500 );
+        } );
+      }
+    } );
+  
+    $( '.side-by-side-carousel [data-slide-index]:not([data-slide-index="1"])' ).removeClass( 'active' ).find( '.description' ).css( { opacity: 0 } ).css( { height: 0 } );
+  } );

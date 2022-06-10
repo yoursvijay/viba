@@ -47,7 +47,34 @@ section {
   /* padding: 60px 0; */
   overflow: hidden;
 }
+@media screen and (min-width:1199px){
+  .template-width{
+    padding:0 20px;
+  }
+}
+@media screen and (min-width:1366px){
+  .template-width{
+    padding:0 40px;
+  }
+}
 @media screen and (min-width:1440px){
+  .template-width{
+    max-width: 100%;
+    padding:0 80px;
+  }
+}
+@media screen and (min-width:1500px){
+  .template-width{
+    max-width: 1464px;
+  }
+}
+@media screen and (min-width:1700px){
+  .template-width{
+    max-width: 1560px;
+    padding: 0;
+  }
+}
+/* @media screen and (min-width:1440px){
   .template-width{
     max-width: 1440px;
     padding: 0 80px;
@@ -58,7 +85,7 @@ section {
     max-width: 1366px;
     padding: 0 50px;
   }
-}
+} */
 @media screen and (max-width:1024px){
   .template-width{
     max-width: 1119px;
@@ -746,9 +773,9 @@ section {
   text-align: left;
   width: 100%;
   padding: 25px 36px;
-  border: 1px solid #12152F !important;
+  border:0!important;
   border-radius: 4px;
-  margin-bottom: 16px !important;
+  margin-bottom: 0 !important;
   background-color: transparent !important;
 }
 .v-feature-nav > div button h4{
@@ -758,16 +785,17 @@ section {
   margin: 0;
 }
 .v-feature-nav > div button span{
+  display: block;
   font-family: "Gilroy-Medium";
-  font-size: 12px;
+  font-size: 14px;
   color: #12152F;
-  display: none;
   line-height: 1.5;
+  margin-top: 8px;
 }
 .v-feature-nav > div button.active{
-  border-color: #FF0062 !important;
+  box-shadow: 0 5px 25px rgb(0 0 0 / 10%);
 }
-.v-feature-nav > div button.active::before{
+/* .v-feature-nav > div button.active::before{
   content: '';
   position: absolute;
   width: 6px;
@@ -775,11 +803,8 @@ section {
   top: 0;
   height: 100%;
   background-color: #FF0062;
-}
-.v-feature-nav > div button.active span{
-  display: block;
-  margin-top: 5px;
-}
+} */
+
 .v-feature-nav .primary-btn{
   display: inline-block;
   margin-top: 22px;

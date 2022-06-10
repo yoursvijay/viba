@@ -1,3 +1,9 @@
+@media screen and (max-width:1440px) {
+    .v-feature-nav > div button{
+        padding: 20px 36px;
+    }
+}
+
 @media screen and (max-width:1366px) {
     .navbar a, .navbar a:focus{
         font-size: 14px;
