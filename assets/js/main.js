@@ -346,14 +346,6 @@ check();
 
   $( function () {
 
-    $( '.side-by-side-carousel .mobile-section' ).addClass( 'with-slick-arrows' ).slick( {
-      mobileFirst: true,
-      slidesToShow: 1,
-      dots: true,
-      centerPadding: "6px",
-      focusOnSelect: true
-    } );
-
     $( '.side-by-side-carousel .slide-text' ).on( 'mouseover click', function () {
       if ( ! $( this ).hasClass( 'active' ) ) {
         var index = $( this ).data( 'slide-index' );

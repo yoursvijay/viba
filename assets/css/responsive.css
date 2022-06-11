@@ -35,12 +35,7 @@
     .vid-tabs li button span{
         font-size: 16px;
     }
-    .kiosk .kiosk-row h4{
-        font-size: 20px;
-    }
-    .kiosk .kiosk-row p{
-        font-size: 14px;
-    }
+
     .virtualexp .virtual-vid-txt h3{
         font-size: 24px;
     }
@@ -126,12 +121,6 @@
 @media screen and (max-width:1023px){
     .works .work-demo .primary-btn{
         margin: 20px 0 40px;
-    }
-    .kiosk-1,.kiosk-3{
-        margin-bottom: 16px;
-    }
-    .kiosk .kiosk-row, .kiosk-4-col,.kiosk-3 img, .kiosk-2 .row img{
-        position: initial;
     }
 }
 @media screen and (max-width:991px){
@@ -265,16 +254,6 @@
     .vid-container{
         flex-direction: column;
         min-height: auto;
-    }
-
-    .kiosk-1,.kiosk-2, .kiosk-3,.kiosk-4{
-        min-height: auto;
-        height: auto;
-        padding: 30px 16px;
-        border-radius: 12px;
-    }
-    .kiosk-1 .row,.kiosk-2 .row, .kiosk-3 .row,.kiosk-4 .row{
-        margin-top: 40px;
     }
     
 }
