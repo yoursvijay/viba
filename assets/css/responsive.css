@@ -75,12 +75,6 @@
     .req-demo p{
         font-size: 16px;
     }
-    .footer .footer-top{
-        padding: 60px 0;
-    }
-    .footer-bottom{
-        padding: 40px 0;
-    }
 }
 @media screen and (max-width:1200px){
     .v-feature-nav > div button{
@@ -229,15 +223,7 @@
     .support-sec header{
         padding-top: 0;
     }
-    .footer .footer-top{
-        padding: 60px 0;
-    }
-    .footer-bottom{
-        padding-bottom: 0;
-    }
-    .footer-menulinks .app-dwnlds{
-        margin-top: 20px;
-    }
+
 }
 
    

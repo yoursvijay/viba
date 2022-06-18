@@ -199,6 +199,7 @@
 }
 .side-by-side-row{
   min-height: 580px;
+  margin-top: 16px;
 }
 
 .side-by-side-carousel .slide-text-wrapper .slide-icon-wrapper, .side-by-side-carousel .slide-text-wrapper .step-number {

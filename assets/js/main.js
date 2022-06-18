@@ -282,11 +282,11 @@ function check() {
 
   for (var i = 0; i < text1.length; i++) {
     if (checkBox.checked == true) {
-      text1[i].style.display = "flex";
-      text2[i].style.display = "none";
+        text1[i].style.display = "flex";
+        text2[i].style.display = "none";
     } else if (checkBox.checked == false) {
-      text1[i].style.display = "none";
-      text2[i].style.display = "flex";
+        text1[i].style.display = "none";
+        text2[i].style.display = "flex";
     }
   }
 }

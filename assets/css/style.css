@@ -933,20 +933,21 @@ section {
   margin: 50px auto 40px;
 }
 
-.app-dwnlds{margin: 26px 0;}
+
 .app-dwnlds a{
   min-width: 233px;
-  min-height: 83px;
+  min-height: 75px;
+  max-width: 300px;
   box-sizing: border-box;
-  border-radius: 15px;
-  display: inline-flex;
+  border-radius: 4px;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid #464756;
-  margin: 12px 11px;
+  margin-bottom: 23px;
 }
 .app-dwnlds a img{
-  margin: 0 17px 0 0;
+  margin: 0 25px 0 0;
 }
 .app-dwnlds a > div{
   text-align: left;
@@ -963,11 +964,11 @@ section {
   text-transform: capitalize;
   margin:0;
 }
-.app-dwnlds a:first-child{
+.app-dwnlds a.appStore{
   background-color: #464756;
   color: #ffffff;
 }
-.app-dwnlds a:last-child{
+.app-dwnlds a.iStore{
   background-color: #ffffff;
   color: #12152F;
 }
@@ -1622,97 +1623,86 @@ section {
 # Footer Section
 --------------------------------------------------------------*/
 .footer{
-  background: #292D57;
-  padding: 0;
+  background-color: #292D57;
+  padding-top: 60px;
 }
-.footer .footer-top{
-  padding: 90px 0 140px;
+.footer-logo{
+  display: block;
+  margin-bottom: 30px;
 }
-.footer-menulinks h4{
-  font-family: 'Gilroy-Medium';
-  font-size: 18px;
+.footer .footer-brand{
+  flex-grow: 1;
+}
+.footer .footer-brand h2{
+  font-size: 16px;
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.footer .footer-brand p{
+  font-size: 16px;
+  font-family: "Gilroy-Regular";
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.footer .footer-brand p a{
+  color: #fff;
+}
+.footer-menulist {
+  flex-grow: 1;
+}
+.footer-menulist h3{
+  font-size: 16px;
+  font-family: "Gilroy-Semibold";
+  font-weight: 600;
   line-height: 1.5;
-  color: #ffffff;
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.footer-menulist div ul{
+  list-style: none;
+  padding-left: 0;
+}
+.footer-menulist div ul li{
   margin-bottom: 25px;
 }
-.footer-menulinks ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.footer-menulist div ul li a{
+  font-size: 15px;
+  font-family: "Gilroy-Medium";
+  line-height: normal;
+  color: #fff;
+  letter-spacing: 1px;
 }
-.footer-menulinks ul li {
-  padding: 0;
-  margin-bottom: 12px;
-}
-.footer-menulinks ul li a{
-  font-family: 'Gilroy-Regular';
-  font-size: 14px;
-  line-height: 233%;
-  color: #FFFFFF;
-  opacity: 0.8;
-  letter-spacing: 0.7px;
-}
-.footer-menulinks ul li a:hover{
-  font-family: 'Gilroy-Bold';
-  color: #F10877;
-}
-.footer-menulinks .app-dwnlds{
+
+.footer-pair-list div.list{
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  margin: 0;
+  column-gap: 45px;
 }
-.footer-menulinks .app-dwnlds a{
-  margin:0 0 24px;
+@media screen and (max-width:425px){
+  .footer-pair-list div.list{
+    display: block;
+  }
 }
-.footer-menulinks .app-dwnlds a.appStore{
-  border: 0;
-  background: #434774;
-  box-shadow: 0px 22px 28px -22px rgba(14, 31, 53, 0.08);
+.copyright-sec{
+  border-top: 1px solid #707070;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.footer-menulinks .app-dwnlds a.iStore{
-  border: 2px solid #434774;
-  background: transparent;
-  box-shadow: 0px 22px 28px -22px rgba(14, 31, 53, 0.08);
-}
-.footer-menulinks .app-dwnlds a div> span,
-.footer-menulinks .app-dwnlds a div> h5{
-  color: #ffffff;
-}
-.footer-bottom{
-  border-top:1px solid #383b62;
-  padding: 45px 0 80px;
-}
-.footer-bottom > div{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer-bottom .footer-logo span{
-  display: block;
-  margin: 6px 0;
-  font-family: 'Gilroy-Medium';
+.copyright-sec p{
+  margin-bottom: 0;
   font-size: 16px;
-  line-height: 1.5;
-  color: #FFFFFF;
-  opacity: 0.7;
+  font-family: "Gilroy-Medium";
+  line-height: normal;
+  color: #fff;
+  letter-spacing: 1px;
 }
-.footer-bottom ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  min-width: 233px;
-}
-.footer-bottom ul li{
-  margin-right: 25px;
-}
-.footer-bottom ul li a img:last-child, .footer-bottom ul li a:hover img:first-child{
-  display: none;
-}
-.footer-bottom ul li a:hover img:last-child{
-  display: block;
-}
+
 
 
 /* privacy-policy */
