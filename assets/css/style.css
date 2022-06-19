@@ -826,112 +826,7 @@ section {
 /*--------------------------------------------------------------
 # Mobile App Section
 --------------------------------------------------------------*/
-.mobile-app{
-  background-image: url("../../assets/img/mob-app-bg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 120px;
-}
-.mob-app-links{
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 25px 0 0;
-}
-.mob-app-links [data-bs-target]{
-  text-indent: initial;
-  width: 100%;
-  height: auto;
-  opacity: 1;
-  border: 0;
-  background-color: transparent;
-}
-.mob-app-links button{
-  display: flex;
-  width: 100%;
-  height: auto;
-  border: none;
-  background-color: transparent;
-  margin-bottom: 50px;
-}
-.mob-app-links button div:first-child{
-  min-width: 75px;
-  height: 75px;
-  border-radius: 12px;
-  background-color: #EDEFF3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mob-app-links button div:last-child{
-  text-align: left;
-  padding-left: 38px;
-}
-.mob-app-links button div:last-child h4{
-  font-family: "Gilroy-Bold";
-  font-size: 18px;
-  color: #12152F;
-  line-height: 27px;
-}
-.mob-app-links button div:last-child p{
-  font-family: "Gilroy-Medium";
-  font-size: 16px;
-  color: #12152F;
-  line-height: 24px;
-}
-.mob-app-links button.active div:last-child h4{
-  color:#F10877;
-}
 
-.mob-app-links button div:first-child img:last-child,
-.mob-app-links button.active div:first-child img:first-child{
-  display: none;
-}
-.mob-app-links button.active div:first-child img:last-child{
-  display: block;
-}
-
-.mob-app-links button.active div:first-child{
-  position: relative;
-  background-color: #FFF2F8;
-}
-.mob-app-links button.active div:first-child::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 30%;
-  width: 4px;
-  height: 29px;
-  border-radius: 0 10px 10px 0;
-  background: #F10877;
-}
-.mobile-app .carousel-inner{
-  max-width: 394px;
-  margin: 0 auto;
-}
-.mobile-app .slide-controls{
-  display: flex;
-  justify-content: center;
-}
-.mobile-app .slide-controls button{
-  background-color: transparent;
-  border: 0;
-  margin: 37px 0;
-  opacity: 0.5;
-  transition: 0.5s ease;
-}
-.mobile-app .slide-controls button:hover{
-  opacity: 1;
-}
-.mobile-app .primary-btn{
-  box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
-  -webkit-box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
-  display: inline-block;
-  width:auto;
-  margin: 50px auto 40px;
-}
 
 
 .app-dwnlds a{
@@ -1796,3 +1691,90 @@ section {
 .close-modal:hover{
   color: #fff !important;
 }
+
+
+.viba-pass{
+  background-image: url(../../assets/img/mob-app-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0;
+}
+.viba-pass-container{
+  margin-left: calc(42.5415vw - 670px);
+  display: flex;
+}
+.slider-view-lt{
+  min-width: 440px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+}
+.slidervideo,
+.slidervideo .slick-list{
+  height: 100%;
+}
+.slider-view-lt img{
+  height: 660px;
+  position: absolute;
+  top: 0px;
+  left: -6px;
+  z-index: 2;
+}
+.slider-view-lt video{
+  position: absolute;
+  top: 14px;
+  left: 71px;
+  width: 287px;
+  z-index: 1;
+}
+.slider-view-rt{
+  max-width: 1400px;
+  margin-left: auto;
+}
+.viba-mobile-app{
+  margin: 0 -15px;
+}
+.viba-mobile-app .slick-slide{
+  margin: 15px;
+}
+.viba-mobile-app .slideDiv{
+  padding: 40px;
+  background-color: transparent;
+  min-height: 350px;
+  border-radius: 12px;
+  border: 1px solid #e4e4e4;
+  opacity: 0.5;
+}
+.viba-mobile-app .slick-current .slideDiv{
+  background-color: #fff;
+  /* box-shadow: rgb(0 0 0 / 5%) 0px 16px 44px 0px; */
+  opacity: 1 !important;
+}
+
+.viba-mobile-app div .slideDiv h3{
+  margin: 32px 0px 12px;
+  font-family: "Gilroy-Bold";
+  font-weight: 800;
+  font-size: 30px;
+}
+.viba-mobile-app div .slideDiv p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.slider-view-rt .arrows{
+  margin: 15px 0;
+}
+.slider-view-rt .arrows button{
+  background-color: transparent;
+  border: 0;
+}
+.slider-view-rt .actions-row{
+  align-items: center;
+  padding: 16px 0;
+  margin-top: 20px;
+}
+

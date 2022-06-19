@@ -361,3 +361,26 @@ check();
   
     $( '.side-by-side-carousel [data-slide-index]:not([data-slide-index="1"])' ).removeClass( 'active' ).find( '.description' ).css( { opacity: 0 } ).css( { height: 0 } );
   } );
+
+
+  $('.viba-mobile-app').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    adaptiveHeight: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    asNavFor: '.slidervideo'
+  });
+  $('.slidervideo').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.viba-mobile-app',
+    dots: false,
+    fade:true,
+    arrows:false,
+    centerMode: true,
+    focusOnSelect: true
+  });
