@@ -1,0 +1,55 @@
+.page-banner{
+    padding: 200px 16px 20px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.page-banner h1{
+    font-family: "Gilroy-Regular";
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+}
+.page-banner p{
+    font-family: "Gilroy-Regular";
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    color: #12152F;
+}
+.page-lt-cnt{
+    max-width: 400px;
+}
+.page-lt-cnt h2{
+    font-family: "Gilroy-Regular";
+    font-size: 32px;
+    line-height: 1.5;
+    color: #12152F;
+}
+.page-lt-cnt p{
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 1.5;
+    color: #12152F;
+}
+.address{
+    padding: 120px 0;
+}
+.address h3{
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+.address a, .address p{
+    font-family: 'Gilroy-Regular';
+    font-size: 26px;
+    color: #12152F;
+    line-height: 1.5;
+}
+
+.req-demo{
+    padding-top: 120px;
+}

@@ -1,0 +1,82 @@
+.page-banner{
+    padding: 200px 16px 20px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.page-banner h1{
+    font-family: "Gilroy-Regular";
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+}
+.page-banner p{
+    font-family: "Gilroy-Regular";
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    color: #12152F;
+}
+.page-banner a.primary-btn{
+    margin: 30px 0;
+}
+.page-bnr-img{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.page-cnt h2{
+    font-family: "Gilroy-Regular";
+    font-size: 32px;
+    line-height: 1.5;
+    color: #12152F;
+    margin-bottom: 20px;
+}
+.page-cnt p.text{
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 1.5;
+    color: #12152F;
+    margin-bottom: 30px;
+}
+
+.page-cnt .sec-quote{
+    display: flex;
+    align-items: baseline;
+}
+.page-cnt .sec-quote div{
+    position: relative;
+}
+.page-cnt .sec-quote div .img-lines{
+    margin-bottom: 16px;
+}
+.page-cnt .sec-quote div .img-person{
+    border-radius: 50%;
+}
+.page-cnt .sec-quote p{
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    line-height: 1.5;
+    color: #12152F;
+    margin-bottom: 10px;
+}
+.page-cnt .sec-quote span{
+    font-family: "Gilroy-Regular";
+    font-size: 18px;
+    line-height: normal;
+    color: #6F707E;
+}
+
+.pr-space{
+    max-width: 500px;
+}
+.pl-space{
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.req-demo{
+    padding-top: 120px;
+}

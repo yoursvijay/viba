@@ -1,0 +1,91 @@
+.page-banner{
+    padding: 200px 16px 20px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.page-banner h1{
+    font-family: "Gilroy-Regular";
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+}
+.page-banner p{
+    font-family: "Gilroy-Regular";
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    color: #12152F;
+    max-width: 40%;
+}
+.plans-sec{
+    padding-top: 0;
+}
+.page-lt-cnt{
+    max-width: 400px;
+}
+.page-lt-cnt h2{
+    font-family: "Gilroy-Regular";
+    font-size: 32px;
+    line-height: 1.5;
+    color: #12152F;
+}
+.page-lt-cnt p{
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 1.5;
+    color: #12152F;
+}
+
+
+.req-demo{
+    padding-top: 120px;
+}
+
+.accordion-container{
+    /* padding-bottom: 200px; */
+}
+.accordion-sec{
+    box-shadow: 0px 2px 4px rgba(58, 64, 87, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 852px;
+    margin-left: auto;
+    padding: 0 24px;
+}
+.accordion{
+    border-left: none;
+}
+.accordion .accordion-item{
+    border: 0;
+    border-bottom: 1px solid rgba(35, 38, 52, 0.1);
+}
+.accordion .accordion-header{
+    background-color: transparent;
+}
+.accordion button{
+    font-family: 'Gilroy-Semibold';
+    font-size: 16px;
+    color: #6F707E !important;
+    background-color: transparent !important;
+    padding: 24px 16px;
+    box-shadow: none !important;
+}
+.accordion button span{
+    max-width: 80%;
+}
+.accordion-button:focus{
+    border-color: none !important;
+    box-shadow: none !important;
+}
+.accordion .accordion-body{
+    padding-top: 0;
+}
+.accordion .accordion-body p{
+    max-width: 80%;
+    font-family: 'Gilroy-Regular';
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+}

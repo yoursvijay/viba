@@ -1,0 +1,77 @@
+.product-banner{
+    padding: 200px 16px 20px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-banner h1{
+    font-family: "Gilroy-Regular";
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+}
+.product-banner a.primary-btn{
+    margin: 30px 0;
+}
+
+.pro-sec .sec-header{
+    text-align: center;
+}
+.pro-sec .sec-header h3{
+    font-family: "Gilroy-Regular";
+    font-size: 48px;
+    line-height: 1.5;
+    color: #12152F;
+    margin-bottom: 20px;
+}
+
+.pro-sec .pro-cnt h2{
+    font-family: "Gilroy-Regular";
+    font-size: 32px;
+    line-height: 1.5;
+    color: #12152F;
+    margin-bottom: 20px;
+}
+.pro-sec .pro-cnt p{
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 1.5;
+    color: #12152F;
+    margin-bottom: 30px;
+}
+.pro-sec .pro-cnt ul{
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+.pro-sec .pro-cnt ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.pro-sec .pro-cnt ul li span{
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 1.5;
+    color: #12152F;
+    margin-left: 18px;
+}
+.pro-sec .pro-cnt ul li img{
+    width: 36px;
+    height: 36px;
+    padding: 11px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 17%), 0px 22px 28px -15px #0e1f35;
+}
+.pro-sec .pro-cnt .empty-btn{
+    font-family: "Gilroy-Bold";
+    font-size: 16px;
+    line-height: normal;
+    color: #12152F;
+    padding: 14px 0;
+}
+
+.req-demo{
+    padding-top: 120px;
+}
