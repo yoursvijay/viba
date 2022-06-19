@@ -274,7 +274,7 @@
 })();
 
 // Subscription plan switch
-function check() {
+function pricingSwitch() {
   var checkBox = document.getElementById("switchMonthly");
   var checkBox = document.getElementById("switchYearly");
   var text1 = document.getElementsByClassName("text1");
@@ -290,8 +290,8 @@ function check() {
     }
   }
 }
-check();
-
+pricingSwitch();
+// End Subscription plan switch
 
 
 // const myModalEl = document.getElementById('videoModal')
@@ -345,8 +345,7 @@ check();
 
 
   $( function () {
-
-    $( '.side-by-side-carousel .slide-text' ).on( 'mouseover click', function () {
+    $( '.side-by-side-carousel .slide-text' ).on( 'click', function () {
       if ( ! $( this ).hasClass( 'active' ) ) {
         var index = $( this ).data( 'slide-index' );
   
@@ -363,6 +362,8 @@ check();
   } );
 
 
+
+  // Viba Pass Mobile App
   $('.viba-mobile-app').slick({
     infinite: true,
     slidesToShow: 3,
@@ -384,3 +385,4 @@ check();
     centerMode: true,
     focusOnSelect: true
   });
+// End Viba Pass Mobile App
