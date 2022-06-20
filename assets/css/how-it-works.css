@@ -285,12 +285,12 @@
 }
 
 .side-by-side-carousel .slide-text.active .step-number, .side-by-side-carousel .slide-text:hover .step-number {
-  background-color: #FA4338;
+  background-color: #ff0062;
   color: #FFFFFF;
 }
 
 .side-by-side-carousel .slide-text.active .title, .side-by-side-carousel .slide-text:hover .title {
-  color: #FA4338;
+  color: #ff0062;
 }
 
 .side-by-side-carousel .slide-image {
