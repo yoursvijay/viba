@@ -1,5 +1,5 @@
 .product-banner{
-    padding: 200px 16px 20px;
+    padding: 90px 16px 20px;
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -15,7 +15,9 @@
 .product-banner a.primary-btn{
     margin: 30px 0;
 }
-
+.pro-sec{
+    padding: 40px 0;
+}
 .pro-sec .sec-header{
     text-align: center;
 }
@@ -70,6 +72,16 @@
     line-height: normal;
     color: #12152F;
     padding: 14px 0;
+}
+
+.pro-sec .pro-cnt .btn-row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.pro-sec .pro-cnt .primary-btn{
+    min-width: 152px;
+    padding: 16px 50px;
 }
 
 .req-demo{
