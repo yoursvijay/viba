@@ -561,8 +561,8 @@ section {
   font-size: 18px;
   margin-left: 22px;
 }
-.hero .primary-btn{
-  padding: 16px 50px;
+.hero .primary-btn, .hero .secondary-btn{
+  padding: 19px 50px;
   box-shadow: 0px 11px 15px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
 }
 .hero .hero-content .btn-row{
