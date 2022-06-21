@@ -224,8 +224,10 @@ section {
 .header {
   transition: all 0.2s;
   z-index: 997;
-  padding: 40px 0;
-  background-color: transparent;
+  padding: 18px 0;
+  position: sticky;
+  top: 0px;
+  background-color:#fff;
 }
 @media screen and (max-width:1440px){
     .header{
@@ -239,7 +241,7 @@ section {
 }
 .header.header-scrolled {
   background: #fff;
-  padding: 15px 0;
+  padding: 16px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 .header .logo {
@@ -507,15 +509,11 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-@media screen and (min-width:1441px){
-  .hero{
-    height: 100vh;
-    padding: 1.5rem 0 0 !important;
-  }
-}
+
 .hero{
   position: relative;
-  padding: 9.375rem 0;
+  height: calc(100vh - 88px);
+  /* padding: 9.375rem 0; */
   /* background-image: url("../img/banner-gif.gif");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -528,6 +526,7 @@ section {
 .hero .container-fluid .row > div{
   display: flex;
   align-items: center;
+  padding: 60px 0;
 }
 .hero .hero-content h1{
   font-family: "Gilroy-Medium";
@@ -561,9 +560,12 @@ section {
   font-size: 18px;
   margin-left: 22px;
 }
-.hero .primary-btn, .hero .secondary-btn{
+.hero .primary-btn{
   padding: 19px 50px;
   box-shadow: 0px 11px 15px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
+}
+.hero .secondary-btn{
+  height: 62px;
 }
 .hero .hero-content .btn-row{
   display: flex;
@@ -591,16 +593,17 @@ section {
 }
 
 .customers-label{
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy-Medium";
   font-size: 20px;
   color: #727272;
-  margin: 30px 0 5px;
+  margin: 60px 0 18px;
 }
 .customers{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+  column-gap: 45px;
+  row-gap: 30px;
 }
 
 
