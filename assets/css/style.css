@@ -228,7 +228,7 @@ section {
   transition: all 0.2s;
   z-index: 997;
   padding: 60px 0;
-  background-color:#e4e4e4;
+  /* background-color:#e4e4e4; */
 }
 @media screen and (max-width:1440px){
     .header{
@@ -528,7 +528,8 @@ section {
 .hero .container-fluid .row > div{
   display: flex;
   align-items: flex-start;
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .hero .hero-content h1{
   font-family: "Gilroy-Semibold";
@@ -598,7 +599,7 @@ section {
   font-family: "Gilroy-Medium";
   font-size: 20px;
   color: #727272;
-  margin: 85px 0 18px;
+  margin: 85px 0 30px;
 }
 .customers{
   display: flex;
@@ -769,12 +770,15 @@ section {
   flex-direction: column;
   justify-content: space-between;
 }
+.pro-sec .sec-header{
+  display: flex;align-items: center;
+}
 .pro-sec .sec-header h3{
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Medium";
   font-size: 32px;
   line-height: 1.5;
   color: #12152F;
-  margin-bottom: 20px;
+  margin: 7px 0 0 12px;
 }
 .pro-sec .pro-cnt h2{
   font-family: "Gilroy-Regular";
@@ -1799,8 +1803,13 @@ section {
   padding: 120px 0;
 }
 .viba-pass-container{
-  margin-left: calc(42.5415vw - 670px);
+  margin-left: calc(45.5415vw - 670px);
   display: flex;
+}
+@media screen and (min-width:1700px) {
+  .viba-pass-container{
+    margin-left: calc(50.5415vw - 670px);
+  }
 }
 .slider-view-lt{
   min-width: 440px;
@@ -1829,8 +1838,7 @@ section {
   z-index: 1;
 }
 .slider-view-rt{
-  max-width: 1400px;
-  margin-left: auto;
+  max-width: 1100px;
 }
 .viba-mobile-app{
   margin: 0 -15px;

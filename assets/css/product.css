@@ -5,13 +5,7 @@
 .pro-sec .sec-header{
     text-align: center;
 }
-.pro-sec .sec-header h3{
-    font-family: "Gilroy-Regular";
-    font-size: 48px;
-    line-height: 1.5;
-    color: #12152F;
-    margin-bottom: 20px;
-}
+
 
 .pro-sec .pro-cnt h2{
     font-family: "Gilroy-Regular";
