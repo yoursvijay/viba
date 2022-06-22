@@ -387,3 +387,19 @@ pricingSwitch();
     focusOnSelect: true
   });
 // End Viba Pass Mobile App
+
+
+var x = 1;
+function updateClass() {
+  let a = $(".vidThumb.activeVid");
+  a.removeClass("activeVid");
+  a = a.parent().next(".videoBox");
+  if (a.length == 0)
+    a = $(".videoBox").first();
+  a.find(".vidThumb").addClass("activeVid");
+}
+$(document).ready(function() {
+  setInterval(function() {
+    updateClass();
+  }, x * 2000);
+});

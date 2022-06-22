@@ -1005,7 +1005,7 @@ section {
 --------------------------------------------------------------*/
 .virtualexp{
   background-color: #292D57;
-  padding: 114px 0 215px;
+  padding: 115px 0;
 }
 .virtual-exp-vids{
   display: flex;
@@ -1013,6 +1013,9 @@ section {
   flex-wrap: wrap;
   gap: 100px;
   justify-content: center;
+}
+.videoBox{
+  text-align: center;
 }
 .vidThumb{
   width: 200px;
@@ -1028,16 +1031,16 @@ section {
   justify-content: center;
 }
 .vidThumb::before{
-  content: url("./../img/icons/icons8-play-button-circled-50.png");
+  content: url("./../img/icons/play.png");
   position: absolute;
-
 }
+
 .vidThumb img{
   width: 180px;
   height: 180px;
   border-radius: 100%;
 }
-.vidThumb::after{
+/* .vidThumb::after{
   content: '';
   position: absolute;
   border: 2px rgba(255, 255, 255, 100%) solid;
@@ -1051,6 +1054,29 @@ section {
   top: 0;
   animation: rotation 4s infinite linear;
   -webkit-animation: rotation 4s infinite linear;
+} */
+.activeVid::after{
+  content: '';
+  position: absolute;
+  border: 2px rgba(255, 255, 255, 100%) solid;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right-color: transparent;
+  top: 0;
+  animation: rotation 3s infinite linear;
+  -webkit-animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
 @-webkit-keyframes rotation {
   from {
