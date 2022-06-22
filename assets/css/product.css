@@ -1,20 +1,4 @@
-.product-banner{
-    padding: 0 16px 20px;
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.product-banner h1{
-    font-family: "Gilroy-Regular";
-    font-size: 48px;
-    line-height: 1.5;
-    text-align: center;
-}
-.product-banner a.primary-btn{
-    margin: 30px 0;
-}
+
 .pro-sec{
     padding: 40px 0;
 }

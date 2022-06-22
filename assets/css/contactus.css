@@ -1,24 +1,4 @@
-.page-banner{
-    padding: 0 16px 20px;
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.page-banner h1{
-    font-family: "Gilroy-Regular";
-    font-size: 48px;
-    line-height: 1.5;
-    text-align: center;
-}
-.page-banner p{
-    font-family: "Gilroy-Regular";
-    font-size: 24px;
-    line-height: 1.5;
-    text-align: center;
-    color: #12152F;
-}
+
 .page-lt-cnt{
     max-width: 400px;
 }

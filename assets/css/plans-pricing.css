@@ -1,25 +1,4 @@
-.page-banner{
-    padding: 0 16px 20px;
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.page-banner h1{
-    font-family: "Gilroy-Regular";
-    font-size: 48px;
-    line-height: 1.5;
-    text-align: center;
-}
-.page-banner p{
-    font-family: "Gilroy-Regular";
-    font-size: 24px;
-    line-height: 1.5;
-    text-align: center;
-    color: #12152F;
-    max-width: 40%;
-}
+
 .plans-sec{
     padding-top: 0;
 }
@@ -44,9 +23,7 @@
     padding-top: 120px;
 }
 
-.accordion-container{
-    /* padding-bottom: 200px; */
-}
+
 .accordion-sec{
     box-shadow: 0px 2px 4px rgba(58, 64, 87, 0.1);
     border-radius: 20px;

@@ -759,9 +759,22 @@ section {
 .features{
   padding: 60px 0;
 }
-.pro-sec .pro-cnt{
+
+.pro-sec{
+  padding-bottom: 60px;
+}
+.pro-sec .pro-cnt .inr-cnt{
+  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pro-sec .sec-header h3{
+  font-family: "Gilroy-Regular";
+  font-size: 32px;
+  line-height: 1.5;
+  color: #12152F;
+  margin-bottom: 20px;
 }
 .pro-sec .pro-cnt h2{
   font-family: "Gilroy-Regular";
@@ -1867,3 +1880,29 @@ section {
   margin-top: 5px;
 }
 
+
+/* Inner Page Styles */
+.page-banner{
+  padding: 80px 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-banner h1{
+  font-family: "Gilroy-Regular";
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+}
+.page-banner a.primary-btn{
+  margin: 30px 0;
+}
+.page-banner p{
+  font-family: "Gilroy-Regular";
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: #12152F;
+  max-width: 40%;
+}
