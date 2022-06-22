@@ -525,7 +525,7 @@ section {
 .hero .container-fluid, .hero .container-fluid .row{
   height: 100%;
 }
-.hero .container-fluid .row > div{
+.hero .container-fluid .row > div.inr-cnt{
   display: flex;
   align-items: flex-start;
   padding-top: 25px;
@@ -762,7 +762,7 @@ section {
 }
 
 .pro-sec{
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 .pro-sec .pro-cnt .inr-cnt{
   height: 100%;
@@ -1007,6 +1007,76 @@ section {
   background-color: #292D57;
   padding: 114px 0 215px;
 }
+.virtual-exp-vids{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+.vidThumb{
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  object-fit: fill;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vidThumb::before{
+  content: url("./../img/icons/icons8-play-button-circled-50.png");
+  position: absolute;
+
+}
+.vidThumb img{
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+}
+.vidThumb::after{
+  content: '';
+  position: absolute;
+  border: 2px rgba(255, 255, 255, 100%) solid;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right-color: transparent;
+  top: 0;
+  animation: rotation 4s infinite linear;
+  -webkit-animation: rotation 4s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+.videoBox h5{
+  font-family: 'Gilroy-Medium';
+  font-size: 20px;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.videoBox a span{
+  color: #fff !important;
+}
+/* .videoBox h5{
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  line-height: normal;
+  color: #fff;
+} */
 
 .vid-tabs li button{
   background-color: transparent;
@@ -1806,13 +1876,14 @@ section {
   margin-left: calc(45.5415vw - 670px);
   display: flex;
 }
-@media screen and (min-width:1700px) {
+@media screen and (max-width:1700px) {
   .viba-pass-container{
     margin-left: calc(50.5415vw - 670px);
   }
 }
 .slider-view-lt{
   min-width: 440px;
+  max-width: 440px;
   display: flex;
   flex-direction: column;
   -webkit-box-pack: center;
@@ -1822,6 +1893,9 @@ section {
 .slidervideo,
 .slidervideo .slick-list{
   height: 100%;
+}
+.slidervideo .slick-slide{
+  width: auto;
 }
 .slider-view-lt img{
   height: 660px;
@@ -1838,7 +1912,7 @@ section {
   z-index: 1;
 }
 .slider-view-rt{
-  max-width: 1100px;
+  max-width: 1240px;
 }
 .viba-mobile-app{
   margin: 0 -15px;
