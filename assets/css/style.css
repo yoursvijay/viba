@@ -227,10 +227,8 @@ section {
 .header {
   transition: all 0.2s;
   z-index: 997;
-  padding: 18px 0;
-  position: sticky;
-  top: 0px;
-  background-color:#fff;
+  padding: 60px 0;
+  background-color:#e4e4e4;
 }
 @media screen and (max-width:1440px){
     .header{
@@ -515,7 +513,8 @@ section {
 
 .hero{
   position: relative;
-  height: calc(100vh - 88px);
+  padding-top: 180px;
+  /* height: calc(100vh - 88px); */
   /* padding: 9.375rem 0; */
   /* background-image: url("../img/banner-gif.gif");
   background-repeat: no-repeat;
@@ -528,8 +527,8 @@ section {
 }
 .hero .container-fluid .row > div{
   display: flex;
-  align-items: center;
-  padding: 60px 0;
+  align-items: flex-start;
+  padding: 25px 0;
 }
 .hero .hero-content h1{
   font-family: "Gilroy-Semibold";
@@ -599,7 +598,7 @@ section {
   font-family: "Gilroy-Medium";
   font-size: 20px;
   color: #727272;
-  margin: 80px 0 18px;
+  margin: 85px 0 18px;
 }
 .customers{
   display: flex;
@@ -759,6 +758,56 @@ section {
 --------------------------------------------------------------*/
 .features{
   padding: 60px 0;
+}
+.pro-sec .pro-cnt{
+  display: flex;
+  align-items: center;
+}
+.pro-sec .pro-cnt h2{
+  font-family: "Gilroy-Regular";
+  font-size: 32px;
+  line-height: 1.5;
+  color: #12152F;
+  margin-bottom: 20px;
+}
+.pro-sec .pro-cnt p{
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 1.5;
+  color: #12152F;
+  margin-bottom: 30px;
+}
+.pro-sec .pro-cnt ul{
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+.pro-sec .pro-cnt ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.pro-sec .pro-cnt ul li span{
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 1.5;
+  color: #12152F;
+  margin-left: 18px;
+}
+.pro-sec .pro-cnt ul li img{
+  width: 36px;
+  height: 36px;
+  padding: 11px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 17%), 0px 22px 28px -15px #0e1f35;
+}
+.pro-sec .pro-cnt .btn-row{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pro-sec .pro-cnt .primary-btn{
+  min-width: 152px;
+  padding: 16px 50px;
 }
 .features .features-main-tabs {
   border-bottom: 2px solid rgba(39, 16, 25, 0.06);
