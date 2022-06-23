@@ -151,7 +151,8 @@ section {
 
 
 .primary-btn, .primary-btn:focus {
-  background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%);
+  /* background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%); */
+  background: #000;
   padding: 16px 36px;
   font-family: "Gilroy-Bold", sans-serif;
   font-size: 16px;
@@ -164,7 +165,7 @@ section {
   color: #ffffff;
 }
 .primary-btn:hover{
-  background: linear-gradient(94.49deg,#9702E5 5.28%, #F10877 100%);
+  background: #000;
 }
 
 .secondary-btn{
@@ -341,7 +342,7 @@ section {
   display: none;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
-  background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%);
+  background: #000;
   padding: 16px 50px;
   font-family: "Gilroy-Bold", sans-serif;
   color: #fff;
@@ -351,7 +352,7 @@ section {
   color: #fff;
 }
 .navbar .getstarted:hover{
-  background: linear-gradient(94.49deg,#9702E5 5.28%,  #F10877 100%);
+  background: #000;
 }
 .navbar .dropdown ul {
   display: block;
@@ -976,8 +977,8 @@ section {
   justify-content: center;
   border: 0;
   margin-bottom: 23px;
-  background-color: #ffffff;
-  color: #12152F;
+  background-color: #000000;
+  color: #ffffff;
 }
 .app-dwnlds a img{
   margin: 0 25px 0 0;
@@ -1029,10 +1030,26 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9;
 }
 .vidThumb::before{
-  content: url("./../img/icons/play.png");
+  content: url("./../img/icons/play-icon.png");
   position: absolute;
+}
+
+.vidThumb::before::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  margin: 0;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #F10877 15%, #F10877 15%);
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite;
 }
 
 .vidThumb img{
@@ -1040,22 +1057,21 @@ section {
   height: 180px;
   border-radius: 100%;
 }
-/* .vidThumb::after{
-  content: '';
+
+.activeVid::after{
+  /* content: "";
   position: absolute;
-  border: 2px rgba(255, 255, 255, 100%) solid;
-  border-radius: 50%;
+  z-index: -1;
+  inset: 0;
+  margin: 0;
+  display: block;
   width: 200px;
   height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right-color: transparent;
-  top: 0;
-  animation: rotation 4s infinite linear;
-  -webkit-animation: rotation 4s infinite linear;
-} */
-.activeVid::after{
+  background: linear-gradient(45deg, #F10877 15%, #F10877 15%);
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite; */
+
   content: '';
   position: absolute;
   border: 2px rgba(255, 255, 255, 100%) solid;
@@ -1374,6 +1390,7 @@ section {
   font-size: 16px;
   line-height: 150%;
   color: #12152F;
+  transition: 0.5s ease all;
 }
 .plan-btn::before{
   content:"";
@@ -1391,8 +1408,11 @@ section {
   -webkit-mask-composite: xor;
   mask-composite: exclude; 
 }
+.plan-btn:hover span{
+  transform: translateY(-4px);
+} 
 
-.plan-btn:hover::before{
+/* .plan-btn:hover::before{
   -webkit-mask:none !important; 
   mask:none !important; 
   z-index: -1;
@@ -1400,7 +1420,7 @@ section {
 }
 .plan-btn:hover::before , .plan-btn:hover span{
   color: #ffffff !important;
-}
+} */
 
 .plansSwiper .plan-card .primary-btn{
   display: inline-block;
@@ -1506,7 +1526,7 @@ section {
 .testimonials{
   background: #292D57;
   position: relative;
-  padding: 150px 0 128px;
+  padding: 100px 0 120px;
 }
 .testimonials .section-header h2,.testimonials .section-header p{
   color: #ffffff;
@@ -1703,11 +1723,11 @@ section {
 # Request Demo Section
 --------------------------------------------------------------*/
 .req-demo{
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .req-demo-body{
-  min-height: 600px;
-  background: #12152F;
+  min-height: 480px;
+  background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1731,6 +1751,8 @@ section {
   margin: 28px 0;
 }
 .req-demo a.primary-btn{
+  background: #fff;
+  color: #000;
   box-shadow: 0px 22px 28px -15px rgba(0, 0, 0, 0.2);
   margin: 12px;
 }
@@ -1743,8 +1765,11 @@ section {
 # Footer Section
 --------------------------------------------------------------*/
 .footer{
-  background-color: #292D57;
+  background-color: #fff;
   padding-top: 60px;
+}
+.footer-row-one{
+  padding-bottom: 30px;
 }
 .footer-logo{
   display: block;
@@ -1755,25 +1780,25 @@ section {
 }
 .footer .footer-brand h2{
   font-size: 16px;
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy-Bold";
   font-weight: 500;
   line-height: normal;
-  color: #fff;
+  color: #000000;
   letter-spacing: 1px;
 }
 .footer .footer-brand p{
   font-size: 16px;
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Medium";
   font-weight: 400;
   line-height: 1.6;
-  color: #fff;
+  color: #000000;
   letter-spacing: 1px;
 }
 .footer .footer-brand p a{
-  color: #fff;
+  color: #000000;
 }
 .social-icons{
-  margin: 16px 0 20px;
+  margin: 35px 0 20px;
 }
 .social-icons a{
   display: inline-block;
@@ -1793,7 +1818,7 @@ section {
   position: absolute;
   top: -6px;
   left: -6px;
-  border: 2px solid #ffffff;
+  border: 2px solid #000000;
 }
 
 .footer-menulist {
@@ -1801,11 +1826,11 @@ section {
 }
 .footer-menulist h3{
   font-size: 16px;
-  font-family: "Gilroy-Semibold";
+  font-family: "Gilroy-Bold";
   font-weight: 600;
   line-height: 1.5;
-  color: #fff;
-  margin-bottom: 30px;
+  color: #000000;
+  margin-bottom: 40px;
   letter-spacing: 1px;
 }
 .footer-menulist div ul{
@@ -1813,13 +1838,13 @@ section {
   padding-left: 0;
 }
 .footer-menulist div ul li{
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .footer-menulist div ul li a{
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Gilroy-Medium";
   line-height: normal;
-  color: #fff;
+  color: #000000;
   letter-spacing: 1px;
 }
 
@@ -1835,15 +1860,15 @@ section {
 }
 .copyright-sec{
   border-top: 1px solid #707070;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .copyright-sec p{
   margin-bottom: 0;
   font-size: 16px;
   font-family: "Gilroy-Medium";
   line-height: normal;
-  color: #fff;
+  color: #000000;
   letter-spacing: 1px;
 }
 
@@ -1996,6 +2021,9 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: #D9AFD9;
+background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
+
 }
 .page-banner h1{
   font-family: "Gilroy-Regular";

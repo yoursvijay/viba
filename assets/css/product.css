@@ -62,6 +62,32 @@
     padding: 16px 50px;
 }
 
+.features-list .feature-block{
+    padding: 30px 0;
+}
+.features-list .feature-block img{
+    display: block;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #fbfbfb;
+}
+.features-list .feature-block h2{
+    font-family: "Gilroy-Bold";
+    font-size: 24px;
+    line-height: normal;
+    color: #12152F;
+    margin: 30px 0 20px;
+    
+}
+.features-list .feature-block p{
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 1.7;
+    color: #12152F;
+}
+
+
+
 .req-demo{
     padding-top: 120px;
 }

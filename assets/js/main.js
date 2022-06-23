@@ -401,5 +401,5 @@ function updateClass() {
 $(document).ready(function() {
   setInterval(function() {
     updateClass();
-  }, x * 2000);
+  }, x * 5000);
 });
