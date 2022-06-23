@@ -228,19 +228,13 @@ section {
 .header {
   transition: all 0.2s;
   z-index: 997;
-  padding: 60px 0;
-  /* background-color:#e4e4e4; */
+  height: 175px;
+  display: flex;
+  align-items: center;
+  /* padding: 60px 0; */
+  background-color:#ffffff;
 }
-@media screen and (max-width:1440px){
-    .header{
-      padding: 30px 0;
-    }
-}
-@media screen and (max-width:767px){
-  .header{
-    padding: 60px 0;
-  }
-}
+
 .header.header-scrolled {
   background: #fff;
   padding: 16px 0;
@@ -514,13 +508,7 @@ section {
 
 .hero{
   position: relative;
-  padding-top: 180px;
-  /* height: calc(100vh - 88px); */
-  /* padding: 9.375rem 0; */
-  /* background-image: url("../img/banner-gif.gif");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 60% 65%; */
+  margin-top: 175px;
 }
 
 .hero .container-fluid, .hero .container-fluid .row{
@@ -2022,20 +2010,21 @@ section {
   flex-direction: column;
   justify-content: center;
   background-color: #D9AFD9;
-background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
-
+  background-image: linear-gradient(90deg, #e5f5fb 0%, #fff3ef 100%);
+  margin-top: 175px;
 }
 .page-banner h1{
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Bold";
   font-size: 48px;
   line-height: 1.5;
   text-align: center;
+  color: #000000;
 }
 .page-banner a.primary-btn{
   margin: 30px 0;
 }
 .page-banner p{
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Medium";
   font-size: 24px;
   line-height: 1.5;
   text-align: center;
