@@ -20,6 +20,9 @@
     .hero .hero-content ul li span{
         font-size: 14px;
     }
+    .customers-label{
+        margin:65px 0 30px;
+    }
     .section-header h2{
         font-size: 32px;
     }
@@ -134,6 +137,7 @@
     .navbar li a:after{
         display: none;
     }
+    .vline{display: none !important;}
     .plansSwiper .swiper-wrapper .swiper-slide:first-child .plan-card,
         .plansSwiper .swiper-wrapper .swiper-slide:last-child .plan-card{
         border-radius: 0;
