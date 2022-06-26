@@ -373,7 +373,18 @@ pricingSwitch();
     adaptiveHeight: true,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
-    asNavFor: '.slidervideo'
+    asNavFor: '.slidervideo',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+    ]
   });
   $('.slidervideo').slick({
     slidesToShow: 1,
@@ -402,4 +413,13 @@ $(document).ready(function() {
   setInterval(function() {
     updateClass();
   }, x * 5000);
+});
+
+
+// On hover disable remain items on header links
+jQuery(function($) {
+  $('.ul-first>li>a').hover(function() {
+    $(this).closest('.ul-first').find('a').toggleClass('inverse');
+  });
+    
 });

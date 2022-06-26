@@ -1,12 +1,10 @@
 
 .pro-sec{
-    padding: 40px 0;
+    margin-top: 60px;
 }
 .pro-sec .sec-header{
     text-align: center;
 }
-
-
 .pro-sec .pro-cnt h2{
     font-family: "Gilroy-Regular";
     font-size: 32px;
