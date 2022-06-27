@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action='https://crm.zoho.in/crm/WebToLeadForm' name=WebToLeads353782000000260012 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory353782000000260012()' accept-charset='UTF-8'>
+
+
+        <div>
+            <label for="name">Name</label>
+            <input type='text' id='Last_Name' name='Last Name' maxlength='80'></input>
+        </div>
+        <input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'>
+        <input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'>
+
+        <!-- <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
+            <label for='Last_Name'>Full Name<span style='color:red;'>*</span></label>
+        </div>
+        <div class='zcwf_col_fld'>
+            <input type='text' id='Last_Name' name='Last Name' maxlength='80'></input>
+            <div class='zcwf_col_help'></div>
+        </div> -->
+    <!-- <div class='zcwf_row'>
+        <div class='zcwf_col_lab'></div>
+        <div class='zcwf_col_fld'>
+            <input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'>
+            <input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'>
+        </div>
+    </div> -->
+
+
+    </form>
+
+
+    <script>
+
+function checkMandatory353782000000260012() {
+ var mndFileds = new Array('Last Name');
+ var fldLangVal = new Array('Full\x20Name');
+ for(i=0;i<mndFileds.length;i++) {
+   var fieldObj=document.forms['WebToLeads353782000000260012'][mndFileds[i]];
+   if(fieldObj) {
+     if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+      if(fieldObj.type =='file')
+         { 
+          alert('Please select a file to upload.'); 
+          fieldObj.focus(); 
+          return false;
+         } 
+     alert(fldLangVal[i] +' cannot be empty.'); 
+               fieldObj.focus();
+               return false;
+     }  else if(fieldObj.nodeName=='SELECT') {
+              if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+         alert(fldLangVal[i] +' cannot be none.'); 
+         fieldObj.focus();
+         return false;
+        }
+     } else if(fieldObj.type =='checkbox'){
+         if(fieldObj.checked == false){
+         alert('Please accept  '+fldLangVal[i]);
+         fieldObj.focus();
+         return false;
+        } 
+      } 
+      try {
+          if(fieldObj.name == 'Last Name') {
+         name = fieldObj.value;
+            }
+     } catch (e) {}
+     }
+ }document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+}
+
+function tooltipShow353782000000260012(el){
+var tooltip = el.nextElementSibling;
+var tooltipDisplay = tooltip.style.display;
+if(tooltipDisplay == 'none'){
+ var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+ for(i=0; i<allTooltip.length; i++){
+     allTooltip[i].style.display='none';
+ }
+ tooltip.style.display = 'block';
+}else{
+ tooltip.style.display='none';
+}
+}
+    </script>
+
+    <script id='wf_anal' src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=037f4c13c049ccc97b9b45ef703b6e8dd6886ba4a2f68d28d4a3c4b227f4c6c0gid3d1071879577e6e4e3da9a9683992c8df14f2288c48c97375807471e3240c457gid534cb20477b1d28b5f45f7cc241888c5gid4ee3a7e9ace6ab1be7c541b329164307&tw=096a715cbfc30dc79d6dc215bf71c5b4284d938378e51186a6daa9337f7519a8'></script>
+</div>
+</body>
+</html>

@@ -2139,7 +2139,7 @@ section {
   top: 25px;
 }
 .sidenavContent{
-  margin: 0 30px 0 70px;
+  margin-left: 70px;
   border-left: 2px solid #ff0062;
   height: 100%;
   background-color: #ffffff;
