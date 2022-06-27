@@ -234,7 +234,11 @@
         slidesPerView: 1,
       },
       575:{
-        slidesPerView: 2,
+        slidesPerView: 1,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       },
       768: {
         slidesPerView: 2,
@@ -376,7 +380,16 @@ pricingSwitch();
     asNavFor: '.slidervideo',
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -423,3 +436,11 @@ jQuery(function($) {
   });
     
 });
+
+
+function openNav() {
+  document.getElementById("scheduleDemo").style.right = "0";
+}
+function closeNav() {
+  document.getElementById('scheduleDemo').style.right = '-100%';
+} 

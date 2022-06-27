@@ -60,7 +60,7 @@
               </div>
             <ul class="lastul">
                 <li><a class="nav-link scrollto" href="https://app.viba.ai/login" target="_blank">Signin</a></li>
-                <li><a class="getstarted scrollto" href="#">Schedule a Demo</a></li>
+                <li><a class="getstarted scrollto" href="javascript:void(0)"  onclick="openNav()">Schedule a Demo</a></li>
             </ul>
           </nav>
           <img src="./assets/img/icons/menu.png" class="img-fluid mobile-nav-toggle" alt="menu-icon">
@@ -88,7 +88,10 @@
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-2 order-1 inr-cnt">
-                        <img class="img-fluid" src="https://viba.ai/assets/img/banner/BannerImagev4.gif" alt="hero image">
+                        <!-- <img class="img-fluid" src="https://viba.ai/assets/img/banner/BannerVideoNewv1.mp4" alt="hero image"> -->
+                        <video autoplay loop>
+                          <source src="https://viba.ai/assets/img/banner/BannerVideoNewv1.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
                 <div class="row">
@@ -662,6 +665,7 @@
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -780,14 +784,14 @@
       <span>We assist you just like Viba assists you - which is all the time!</span>
     </header>
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-8 order-lg-1 order-2">
         <ul>
           <li><img src="assets/img/tick-b.png" alt="tick"><div><h4>Two Week Training </h4><span>Learn how to make the best of viba<br/> with our two-week training </span></div></li>
           <li><img src="assets/img/tick-b.png" alt="tick"><div><h4>Live Chat & Phone Support</h4><span>Active phone and chat support. </span></div></li>
           <li><img src="assets/img/tick-b.png" alt="tick"><div><h4>Monthly Webinars</h4><span>Webinars to keep you updated.</span></div></li>
       </ul>
       </div>
-      <div class="col-lg-4 relative">
+      <div class="col-lg-4 relative order-lg-2 order-1">
         <div class="support-img"><img class="img-fluid" src="./assets/img/SupportAgentPic.svg" alt="viba support"></div>
       </div>
     </div>
@@ -1006,6 +1010,20 @@
   </div>
 </div>
 <!-- End Temperature Detection:-->
+
+
+<!-- sidenav Schedule a demo-->
+<div id="scheduleDemo" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./assets/img/icons/close-nav-icon.png" alt=""></a>
+  <div class="sidenavContent">
+    <div class="sidenavHeader">
+      <img src="./assets/img/icons/viba-icon-b.png" alt="viba">
+      <h2>Schedule a demo</h2>
+      <p>Book your slot to get the experience of Viba.</p>
+    </div>
+  </div>
+ </div>
+  <!--sidenav Schedule a demo ends-->
 
 
 
