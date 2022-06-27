@@ -1016,111 +1016,73 @@
 <div id="scheduleDemo" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./assets/img/icons/close-nav-icon.png" alt=""></a>
   <div class="sidenavContent">
-    <div class="sidenavHeader">
-      <img src="./assets/img/icons/viba-icon-b.png" alt="viba">
-      <h2>Schedule a demo</h2>
-      <p>Book your slot to get the experience of Viba.</p>
-
-
-
-
-      <div class="scheduleDemo">
-          <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style='background-color: white;color: black;max-width: 600px;'>
-          <form action='https://crm.zoho.in/crm/WebToLeadForm' name=WebToLeads353782000000262009 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory353782000000262009()' accept-charset='UTF-8'>
+    <div class="sidenavHeader h-100">
+      <div class="scheduleDemo customForm h-100">
+        <div id='crmWebToEntityForm' class='h-100'>
+          <form action='https://crm.zoho.in/crm/WebToLeadForm' class="h-100" name=WebToLeads353782000000262009 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory353782000000262009()' accept-charset='UTF-8'>
           <input type='text' style='display:none;' name='xnQsjsdp' value='3d1071879577e6e4e3da9a9683992c8df14f2288c48c97375807471e3240c457'></input> 
           <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
           <input type='text' style='display:none;' name='xmIwtLD' value='037f4c13c049ccc97b9b45ef703b6e8d8471cfca70e28537f92f9e18a06c2047'></input> 
           <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
           <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;viba.ai' > </input>
             <!-- Do not remove this code. -->
+          <div class="formBody">
+            <div class="container-fluid">
+              <div>
+                <img src="./assets/img/icons/viba-icon-b.png" alt="viba">
+                <h2>Schedule a demo</h2>
+                <p>Book your slot to get the experience of Viba.</p>
+              </div>
+              <div class="row">
+                 <div class="col-6">
+                   <div class="formgroup">
+                     <label for='First_Name' class="formLabel">First Name<span style='color:red;'>*</span></label>
+                     <input type='text' id='First_Name' class="input" name='First Name' maxlength='40'></input>
+                   </div>
+                 </div>
+                 <div class="col-6">
+                   <div class="formgroup">
+                     <label for='Last_Name' class="formLabel">Last Name<span style='color:red;'>*</span></label>
+                     <input type='text' id='Last_Name' class="input" name='Last Name' maxlength='80'></input>
+                   </div>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-12">
+                   <div class="formgroup">
+                     <label for='Phone' class="formLabel">Phone Number<span style='color:red;'>*</span></label>
+                     <input type='text' id='Phone' class="input" name='Phone' maxlength='30'></input>
+                   </div>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-12">
+                   <div class="formgroup">
+                     <label for='Email' class="formLabel">Email<span style='color:red;'>*</span></label>
+                     <input type='text' ftype='email' id='Email' class="input" name='Email' maxlength='100'></input>
+                   </div>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-12">
+                   <div class="formgroup">
+                     <label for='Company' class="formLabel">Company<span style='color:red;'>*</span></label>
+                     <input type='text' id='Company' class="input" name='Company' maxlength='200'></input>
+                   </div>
+                 </div>
+               </div>
+               </div>
+               <div class="container-fluid">
+                <div class="row formBtns">
+                  <div class="col-12">
+                    <input type='submit' id='formsubmit' class='formsubmit primary-btn w-60' value='Submit'>
+                    <input type='reset' class='resetBtn' name='reset' value='Reset'>
+                  </div>
+                </div>
+              </div>
+          </div>
 
-          <div class='zcwf_title' style='max-width: 600px;color: black;'>scheduleaDemo</div>
-
-
-          <div class="row">
-            <div class="col-6">
-              <label for='First_Name'>First Name</label>
-              <input type='text' id='First_Name' name='First Name' maxlength='40'></input>
-            </div>
-            <div class="col-6">
-              <label for='Last_Name'>Last Name<span style='color:red;'>*</span></label>
-              <input type='text' id='Last_Name' name='Last Name' maxlength='80'></input>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <label for='Phone'>Phone Number<span style='color:red;'>*</span></label>
-              <input type='text' id='Phone' name='Phone' maxlength='30'></input>
-            </div>
-            <div class="col-6">
-              <label for='Email'>Email<span style='color:red;'>*</span></label>
-              <input type='text' ftype='email' id='Email' name='Email' maxlength='100'></input>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <label for='Company'>Company<span style='color:red;'>*</span></label>
-              <input type='text' id='Company' name='Company' maxlength='200'></input>
-            </div>
-            <div class="col-6"></div>
-          </div>
-          <div class="row">
-            <input type='submit' id='formsubmit' class='formsubmit primary-btn' value='Submit' title='Submit'>
-            <input type='reset' class='btn' name='reset' value='Reset' title='Reset'>
-          </div>
-          </div>
-
-          <!-- <div class='zcwf_row'>
-            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
-              <label for='First_Name'>First Name<span style='color:red;'>*</span></label>
-            </div>
-            <div class='zcwf_col_fld'>
-              <input type='text' id='First_Name' name='First Name' maxlength='40'></input>
-              <div class='zcwf_col_help'></div>
-            </div>
-          </div>
-          <div class='zcwf_row'>
-            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
-              <label for='Last_Name'>Last Name<span style='color:red;'>*</span></label>
-             </div>
-             <div class='zcwf_col_fld'>
-              <input type='text' id='Last_Name' name='Last Name' maxlength='80'></input>
-              <div class='zcwf_col_help'></div>
-            </div>
-          </div> -->
-          <!-- <div class='zcwf_row'>
-            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
-              <label for='Phone'>Phone Number<span style='color:red;'>*</span></label>
-            </div>
-            <div class='zcwf_col_fld'>
-              <input type='text' id='Phone' name='Phone' maxlength='30'></input>
-              <div class='zcwf_col_help'></div>
-            </div>
-          </div> -->
-          <!-- <div class='zcwf_row'>
-            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
-              <label for='Email'>Email<span style='color:red;'>*</span></label>
-            </div>
-            <div class='zcwf_col_fld'>
-              <input type='text' ftype='email' id='Email' name='Email' maxlength='100'></input>
-              <div class='zcwf_col_help'></div>
-            </div>
-          </div> -->
-          <!-- <div class='zcwf_row'>
-            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
-              <label for='Company'>Company<span style='color:red;'>*</span></label>
-            </div>
-            <div class='zcwf_col_fld'>
-              <input type='text' id='Company' name='Company' maxlength='200'></input>
-              <div class='zcwf_col_help'></div>
-            </div>
-          </div>
-          <div class='zcwf_row'>
-            <div class='zcwf_col_lab'></div>
-            <div class='zcwf_col_fld'>
-              <input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'>
-              <input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'></div>
-            </div> -->
+        </div>
 
             <script>
             function validateEmail353782000000262009()
@@ -1208,10 +1170,6 @@
 
 
       </div>
-
-
-
-
 
 
 

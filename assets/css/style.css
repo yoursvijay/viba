@@ -2155,6 +2155,7 @@ section {
   font-family: "Gilroy-Semibold";
   font-size: 15px;
   color: #707070;
+  margin-bottom: 59px;
 }
 
 /* .sidenav::before{
@@ -2165,3 +2166,50 @@ section {
   z-index: 9999;
   clear: both;
 } */
+
+/* customForm */
+.customForm .formgroup{
+  margin-bottom: 30px;
+}
+.customForm .formgroup .formLabel{
+  font-family: "Gilroy-Semibold";
+  font-size: 15px;
+  line-height: normal;
+  color: #000;
+  display: block;
+  margin-bottom: 8px;
+}
+.customForm .formgroup .input{
+  height: 64px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  width: 100%;
+  text-indent: 12px;
+  font-family: "Gilroy-Semibold";
+  font-size: 18px;
+  line-height: normal;
+}
+.customForm .formgroup .input:focus{
+  outline: none;
+  border-bottom: 2px solid #FF0062;
+}
+.formBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.formBtns .primary-btn{
+  width: 170px;
+  text-transform: uppercase !important;
+}
+.formBtns .resetBtn{
+  font-family: "Gilroy-Semibold";
+  font-size: 15px;
+  line-height: normal;
+  background-color: transparent;
+  border: 0;
+  text-transform: uppercase;
+  padding: 25px 30px;
+  margin-left: 10px;
+}
