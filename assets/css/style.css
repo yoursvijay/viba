@@ -2213,3 +2213,28 @@ section {
   padding: 25px 30px;
   margin-left: 10px;
 }
+.customForm .multiSelect{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  width: 100%;
+  text-indent: 12px;
+  font-family: "Gilroy-Semibold";
+  font-size: 18px;
+  line-height: normal;
+}
+.customForm .cuatomSelect{
+  width: 100%;
+  height: 64px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  width: 100%;
+  text-indent: 12px;
+  font-family: "Gilroy-Semibold";
+  font-size: 18px;
+  line-height: normal;
+}
+.customForm .multiSelect:focus,.customForm .cuatomSelect:focus{
+  outline: none;
+}

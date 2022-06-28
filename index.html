@@ -1071,6 +1071,34 @@
                    </div>
                  </div>
                </div>
+               <div class="row">
+                <div class="col-12">
+                  <div class="formgroup">
+                    <select class='multiSelect' id='LEADCF1' name='LEADCF1' multiple >
+                      <option selected value='Viba&#x20;Visitors'>Viba Visitors</option>
+                      <option value='Viba&#x20;Employees'>Viba Employees</option>
+                      <option value='Viba&#x20;Meeting&#x20;Rooms'>Viba Meeting Rooms</option>
+                    </select>
+                  </div>
+                 </div>
+               </div>
+               <div class="row">
+                <div class="col-12">
+                  <div class="formgroup">
+                    <select class='cuatomSelect' id='Lead_Status' name='Lead Status'  >
+                      <option value='-None-'>-None-</option>
+                    <option selected value='Attempted&#x20;to&#x20;Contact'>Attempted to Contact</option>
+                      <option value='Contact&#x20;in&#x20;Future'>Contact in Future</option>
+                      <option value='Contacted'>Contacted</option>
+                      <option value='Junk&#x20;Lead'>Junk Lead</option>
+                      <option value='Lost&#x20;Lead'>Lost Lead</option>
+                      <option value='Not&#x20;Contacted'>Not Contacted</option>
+                      <option value='Pre-Qualified'>Pre-Qualified</option>
+                      <option value='Not&#x20;Qualified'>Not Qualified</option>
+                    </select>
+                  </div>
+                </div>
+               </div>
                </div>
                <div class="container-fluid">
                 <div class="row formBtns">
@@ -1099,7 +1127,7 @@
                   var dotpos=emailVal.lastIndexOf('.');
                   if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailVal.length)
                   {
-                    alert('Please enter a valid email address. ');
+                    // alert('Please enter a valid email address. ');
                     emailFld[i].focus();
                     return false;
                   }
@@ -1117,23 +1145,23 @@
                 if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
                 if(fieldObj.type =='file')
                   { 
-                  alert('Please select a file to upload.'); 
+                  // alert('Please select a file to upload.'); 
                   fieldObj.focus(); 
                   return false;
                   } 
-                alert(fldLangVal[i] +' cannot be empty.'); 
+                // alert(fldLangVal[i] +' cannot be empty.'); 
                 document.fldLangVal[i].value = document.getElementsByClassName('help').innerHTML;
                         fieldObj.focus();
                         return false;
                 }  else if(fieldObj.nodeName=='SELECT') {
                       if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
-                  alert(fldLangVal[i] +' cannot be none.'); 
+                  // alert(fldLangVal[i] +' cannot be none.'); 
                   fieldObj.focus();
                   return false;
                   }
                 } else if(fieldObj.type =='checkbox'){
                 if(fieldObj.checked == false){
-                  alert('Please accept  '+fldLangVal[i]);
+                  // alert('Please accept  '+fldLangVal[i]);
                   fieldObj.focus();
                   return false;
                   } 
