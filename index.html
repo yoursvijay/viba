@@ -1038,6 +1038,7 @@
                    <div class="formgroup">
                      <label for='First_Name' class="formLabel">First Name<span style='color:red;'>*</span></label>
                      <input type='text' id='First_Name' class="input" name='First Name' maxlength='40'></input>
+                     <div class="help"></div>
                    </div>
                  </div>
                  <div class="col-6">
@@ -1122,6 +1123,7 @@
                   return false;
                   } 
                 alert(fldLangVal[i] +' cannot be empty.'); 
+                document.fldLangVal[i].value = document.getElementsByClassName('help').innerHTML;
                         fieldObj.focus();
                         return false;
                 }  else if(fieldObj.nodeName=='SELECT') {
@@ -1196,6 +1198,8 @@
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+<!-- Live Chat -->
+<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "cdc29324da53dbe8517091ba090277f3bf64faaea0a72862f408a63436eab6b0c30f0ed1535691fc4b8d383b4c2d2a9e", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
 <script>
 $( function () {
   $( '.side-by-side-carousel .mobile-section' ).addClass( 'with-slick-arrows' ).slick( {
