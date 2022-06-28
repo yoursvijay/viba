@@ -2145,6 +2145,17 @@ section {
   background-color: #ffffff;
   padding: 26px;
 }
+/* .sidenav::after{
+  z-index: -1; 
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0, 0.7);
+} */
 .sidenavHeader h2{
   font-family: "Gilroy-Semibold";
   font-size: 24px;
@@ -2170,6 +2181,7 @@ section {
 /* customForm */
 .customForm .formgroup{
   margin-bottom: 30px;
+  position: relative;
 }
 .customForm .formgroup .formLabel{
   font-family: "Gilroy-Semibold";
@@ -2191,8 +2203,10 @@ section {
 }
 .customForm .formgroup .input:focus{
   outline: none;
-  border-bottom: 2px solid #FF0062;
 }
+.customForm .formgroup .input ~ .focus-border, .multiSelect ~ .focus-border{ position: absolute;bottom: 0; left: 0; width: 0; height: 2px; background-color: #F10877; transition: 0.4s;}
+.customForm .formgroup .input:focus ~ .focus-border, .multiSelect:focus ~ .focus-border{width: 100%; transition: 0.4s;}
+.multiSelect:focus{border-bottom: 0 !important;}
 .formBody{
   display: flex;
   flex-direction: column;
@@ -2238,3 +2252,4 @@ section {
 .customForm .multiSelect:focus,.customForm .cuatomSelect:focus{
   outline: none;
 }
+
