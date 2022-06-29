@@ -266,7 +266,7 @@ section {
   line-height: 0;
 }
 .header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 .header .logo span {
   font-size: 30px;
@@ -546,8 +546,7 @@ section {
 }
 .hero .container-fluid .row > div.inr-cnt{
   display: flex;
-  align-items: flex-start;
-  padding-top: 25px;
+  align-items: center;
   padding-bottom: 25px;
 }
 .hero .hero-content h1{
@@ -618,7 +617,7 @@ section {
   font-family: "Gilroy-Medium";
   font-size: 18px;
   color: #727272;
-  margin: 85px 0 30px;
+  margin: 0 0 30px;
 }
 .customers{
   display: flex;
