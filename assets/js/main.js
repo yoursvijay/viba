@@ -444,3 +444,8 @@ function openNav() {
 function closeNav() {
   document.getElementById('scheduleDemo').style.right = '-100%';
 } 
+
+
+$('.scheduleDemobox').click(function() {
+  $('#demoOverlay').toggleClass('open');
+ });
