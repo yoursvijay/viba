@@ -618,8 +618,7 @@ section {
   font-family: "Gilroy-Medium";
   font-size: 18px;
   color: #727272;
-  /* margin: 85px 0 30px; */
-  margin: 0 0 30px;
+  margin: 85px 0 30px;
 }
 .customers{
   display: flex;
@@ -2253,3 +2252,22 @@ section {
   outline: none;
 }
 
+
+.zsiq_custommain.siq_bR{
+  bottom: 25px;
+  right: 25px;
+}
+.zsiq_custommain.siq_bR::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  margin: 0;
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(45deg, #F10877 15%, #F10877 15%);
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite;
+}
