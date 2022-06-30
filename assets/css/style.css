@@ -116,7 +116,9 @@ section {
   color: #12152F;
   text-transform: capitalize;
   font-family: "Gilroy-Medium";
+  position: relative;
 }
+
 .section-header p {
   font-family: "Gilroy-Medium";
   margin: 16px 0;
@@ -160,41 +162,99 @@ section {
 
 
 .primary-btn, .primary-btn:focus {
-  /* background: linear-gradient(94.49deg, #F10877 5.28%, #9702E5 100%); */
   background: #000;
+  border: 3px solid #000000;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 16px 36px;
   font-family: "Gilroy-Semibold", sans-serif;
   font-size: 16px;
   color: #fff;
   border-radius: 4px;
-  box-shadow: 0px 14px 17px rgb(154 143 143 / 25%), 0px 22px 28px -15px rgb(136 104 212 / 20%);
+  transition: 0.1s ease all;
 }
 
 .primary-btn, .primary-btn:hover{
   color: #ffffff;
+  background-color: #000000;
 }
 .primary-btn:hover{
-  background: #000;
+  color: #ffffff;
+  background-color: #000000;
+  box-shadow: 0px 14px 17px rgb(154 143 143 / 25%), 0px 22px 28px -15px rgb(136 104 212 / 20%);
+  transform: translateY(-5px);
 }
 
+
 .secondary-btn{
+  background: none;
+  cursor: pointer;
   min-width: 152px;
-  height: 56px;
+  height: 62px;
   padding: 4px 50px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 30px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family: "Gilroy-Semibold", sans-serif;
+  font-size: 16px;
+  outline: none;
   position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 3px solid #000000;
+  border-radius: 4px;
+  color: #000000;
+
 }
-.secondary-btn span{
+
+
+
+.secondary-btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-1 {
+  border: 3px solid #000000;
+  color: #000;
+}
+/* Button 1c */
+.btn-1c:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000;
+}
+
+.btn-1c:hover,
+.btn-1c:active {
+	color: #fff;
+}
+
+.btn-1c:hover:after,
+.btn-1c:active:after {
+	width: 100%;
+}
+
+
+
+/* .secondary-btn span{
   font-family: 'Gilroy-Semibold';
   font-size: 16px;
   line-height: 150%;
   color: #12152F !important;
   transition: 0.5s ease all;
-}
-.secondary-btn::before{
+} */
+/* .secondary-btn::before{
   content: "";
     position: absolute;
     top: 0;
@@ -204,6 +264,7 @@ section {
     border-radius: 4px;
     padding: 2px;
     background: linear-gradient(45deg,#F10877,#9702E5);
+    background: linear-gradient(45deg,#000,#000);
     mask: linear-gradient(#fff 45deg 45deg) content-box, linear-gradient(#fff 45deg 45deg);
     -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
@@ -211,7 +272,7 @@ section {
 }
 .secondary-btn:hover span {
   transform: translateY(-4px);
-} 
+}  */
 /* .secondary-btn:hover::before, .secondary-btn:hover span {
   margin-bottom: 3px;
 } */
@@ -579,12 +640,10 @@ section {
   margin-left: 22px;
 }
 .hero .primary-btn{
-  padding: 19px 50px;
-  box-shadow: 0px 11px 15px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
+  /* padding: 19px 50px; */
+  /* box-shadow: 0px 11px 15px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2); */
 }
-.hero .secondary-btn{
-  height: 62px;
-}
+
 .hero .hero-content .btn-row{
   display: flex;
   align-items: center;
@@ -614,13 +673,13 @@ section {
   font-family: "Gilroy-Medium";
   font-size: 18px;
   color: #727272;
-  margin: 0 0 30px;
+  margin: 0 0 25px;
 }
 .customers{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   column-gap: 80px;
   row-gap: 30px;
   margin-bottom: 16px;
@@ -1038,6 +1097,10 @@ section {
   gap: 100px;
   justify-content: center;
 }
+.virtual-exp-vids .secondary-btn{
+
+  border-color: #ffffff;
+}
 .videoBox{
   text-align: center;
 }
@@ -1380,14 +1443,14 @@ section {
   line-height: 33px;
 }
 .plansSwiper .plan-card h3 > span{
-  font-family: 'Gilroy-SemiBold';
+  font-family: 'Gilroy-Regular';
   font-size: 16px;
   line-height: 1.5;
   color: #6F707E;
   margin-top: 8px;
 }
 .plansSwiper .plan-card p{
-    font-family: 'Gilroy-SemiBold';
+    font-family: 'Gilroy-Regular';
     font-size: 16px;
     line-height: 1.5;
     color: #6F707E;
@@ -1420,7 +1483,7 @@ section {
 
 .plansSwiper .plan-card .plan-btn{
     min-width: 100%;
-    height: 60px;
+    height: 69px;
     padding: 4px 20px;
     display: inline-flex;
     align-items: center;
@@ -1467,10 +1530,9 @@ section {
 } */
 
 .plansSwiper .plan-card .primary-btn{
+  height: 69px;
   width: 100%;
   text-align: center;
-  display: inline-block;
-  padding: 18px 33px;
   box-shadow: 0px 22px 28px -15px rgba(0, 0, 0, 0.2);
 }
 
@@ -1789,12 +1851,13 @@ section {
   color: #FFFFFF;
   margin: 28px 0;
 }
-.req-demo a.primary-btn{
-  background: #fff;
+.req-demo .primary-btn{
+  border-color: #fff;
+  background-color: #fff;
   color: #000;
-  box-shadow: 0px 22px 28px -15px rgba(0, 0, 0, 0.2);
-  margin: 12px;
+  height: 69px;
 }
+
 .viba-half-img{
   position: absolute;
   right: 0;
@@ -1890,7 +1953,7 @@ section {
 .footer-pair-list div.list{
   display: flex;
   align-items: flex-start;
-  column-gap: 45px;
+  column-gap: 65px;
 }
 .footer-menulist div.list li a{
   position: relative;
@@ -1912,7 +1975,7 @@ section {
   bottom: -5px;
 }
 .footer-menulist div.list li a:hover::after{
-  width: 100%;
+  width: 50%;
   left: 0;
 }
 
@@ -2093,8 +2156,7 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #D9AFD9;
-  background-image: linear-gradient(90deg, #e5f5fb 0%, #fff3ef 100%);
+  background-color: #ffffff;
   margin-top: 175px;
 }
 @media screen and (max-width:1680px){
@@ -2198,7 +2260,7 @@ section {
 }
 .formBtns .primary-btn{
   width: 170px;
-  color: #000;
+  color: #FF0968;
    border: none;
   background-color: #fff !important;
   text-transform: uppercase !important;
@@ -2331,6 +2393,7 @@ section {
   cursor: pointer;
   border-radius: 100%;
   z-index: 9;
+  max-width: 40px;
 }
 
 .right-area .nav-tabs{
