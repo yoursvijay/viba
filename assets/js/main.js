@@ -447,6 +447,9 @@ function closeNav() {
 
 $('.scheduleDemobox').click(function() {
   $('#demoOverlay').toggleClass('open');
+  document.getElementById("#myForm").reset();
+  e.preventDefault()
+
  });
 
 

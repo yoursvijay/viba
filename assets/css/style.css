@@ -2367,4 +2367,27 @@ section {
   margin-bottom: 25px;
 }
 
-
+.successMsg.formBody{
+  display: block;
+  height: auto;
+}
+.confirmation .successImg{
+  margin:34px 0 30px;
+}
+.confirmation p{
+  font-family: "Gilroy-Medium";
+  font-size: 21px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.confirmation a{
+  font-family: "Gilroy-Semibold";
+  display: block;
+  width: 170px;
+  text-align: center;
+  padding: 19px 15px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #FF0968;
+  font-size: 18px;
+}
