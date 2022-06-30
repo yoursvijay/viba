@@ -2,6 +2,12 @@
     .v-feature-nav > div button{
         padding: 20px 36px;
     }
+    .formBody{
+        padding: 40px 80px 10px 80px;
+    }
+    .demo-overlay .right-area{
+        padding: 110px 50px 16px 50px;
+    }
 }
 
 @media screen and (max-width:1366px) {
@@ -131,6 +137,12 @@
     .support-sec .template-width{
         padding: 0 16px;
     }
+    .formBody{
+        padding: 40px 16px 80px;
+    }
+    .demo-overlay .right-area{
+        padding: 110px 16px 20px;
+    }
 
 }
 @media screen and (max-width:1024px){
@@ -153,6 +165,9 @@
     }
     .features-list {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .formBody h2, .right-area .tab-content h2{
+        font-size: 30px;
     }
 }
 @media screen and (max-width:1023px){
@@ -278,6 +293,9 @@
     .pro-sec .pro-cnt .inr-cnt{
         margin-top: 30px;
     }
+    .demo-overlay{
+        overflow-y: auto;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -299,6 +317,13 @@
     }
     .page-banner p{
         max-width: 100%;
+    }
+    .demo-overlay{
+        display: block;
+    }
+   
+    .demo-overlay .left-area, .demo-overlay .right-area{
+        width: 100%;
     }
 }
 
