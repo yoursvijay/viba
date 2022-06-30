@@ -1058,7 +1058,7 @@
                      <div class="col-12">
                        <div class="formgroup">
                          <label for='Phone' class="formLabel">Phone Number</label>
-                         <input type='text' id='Phone' class="input" name='Phone' maxlength='30' required></input>
+                         <input type='tel' id='Phone' class="input" name='Phone' minlength="10" maxlength='30' required></input>
                          <div class="focus-border"></div>
                          <div class="invalid-tooltip">
                           Please enter valid mobile number
@@ -1070,7 +1070,7 @@
                      <div class="col-12">
                        <div class="formgroup">
                          <label for='Email' class="formLabel">Email</label>
-                         <input type='text' ftype='email' id='Email' class="input" name='Email' maxlength='100' required></input>
+                         <input type='email'  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ftype='email' id='Email' class="input" name='Email' maxlength='100' required></input>
                          <div class="focus-border"></div>
                          <div class="invalid-tooltip">
                           Please enter valid email
@@ -1129,19 +1129,19 @@
     
      
     
-              // function tooltipShow353782000000262009(el){
-              //   var tooltip = el.nextElementSibling;
-              //   var tooltipDisplay = tooltip.style.display;
-              //   if(tooltipDisplay == 'none'){
-              //     var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
-              //     for(i=0; i<allTooltip.length; i++){
-              //       allTooltip[i].style.display='none';
-              //     }
-              //     tooltip.style.display = 'block';
-              //   }else{
-              //     tooltip.style.display='none';
-              //   }
-              // }
+              function tooltipShow353782000000262009(el){
+                var tooltip = el.nextElementSibling;
+                var tooltipDisplay = tooltip.style.display;
+                if(tooltipDisplay == 'none'){
+                  var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                  for(i=0; i<allTooltip.length; i++){
+                    allTooltip[i].style.display='none';
+                  }
+                  tooltip.style.display = 'block';
+                }else{
+                  tooltip.style.display='none';
+                }
+              }
               </script>
                 <!-- Do not remove this --- Analytics Tracking code starts -->
                 <script id='wf_anal' src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=037f4c13c049ccc97b9b45ef703b6e8d8471cfca70e28537f92f9e18a06c2047gid3d1071879577e6e4e3da9a9683992c8df14f2288c48c97375807471e3240c457gid534cb20477b1d28b5f45f7cc241888c5gid4ee3a7e9ace6ab1be7c541b329164307&tw=096a715cbfc30dc79d6dc215bf71c5b4284d938378e51186a6daa9337f7519a8'></script>
