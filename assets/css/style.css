@@ -328,6 +328,7 @@ section {
 }
 .header .logo img {
   max-height: 50px;
+  margin-bottom: 12px;
 }
 .header .logo span {
   font-size: 30px;
@@ -1877,6 +1878,9 @@ section {
   display: block;
   margin-bottom: 30px;
 }
+.footer-logo img{
+  max-width: 160px;
+}
 .footer .footer-brand{
   flex-grow: 1;
 }
@@ -2260,6 +2264,7 @@ section {
 }
 .formBtns .primary-btn{
   width: 170px;
+  display: inline-flex;
   color: #FF0968;
    border: none;
   background-color: #fff !important;
