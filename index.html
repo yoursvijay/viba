@@ -1035,15 +1035,21 @@
                      <div class="col-6">
                        <div class="formgroup">
                          <label for='First_Name' class="formLabel">First Name<span style='color:red;'>*</span></label>
-                         <input type='text' id='First_Name' class="input" name='First Name' maxlength='40'></input>
+                         <input type='text' id='First_Name' class="input" name='First Name' maxlength='40' required></input>
                          <div class="focus-border"></div>
+                         <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
                        </div>
                      </div>
                      <div class="col-6">
                        <div class="formgroup">
                          <label for='Last_Name' class="formLabel">Last Name<span style='color:red;'>*</span></label>
-                         <input type='text' id='Last_Name' class="input" name='Last Name' maxlength='80'></input>
+                         <input type='text' id='Last_Name' class="input" name='Last Name' maxlength='80' required></input>
                          <div class="focus-border"></div>
+                         <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
                        </div>
                      </div>
                    </div>
@@ -1051,8 +1057,11 @@
                      <div class="col-12">
                        <div class="formgroup">
                          <label for='Phone' class="formLabel">Phone Number<span style='color:red;'>*</span></label>
-                         <input type='text' id='Phone' class="input" name='Phone' maxlength='30'></input>
+                         <input type='text' id='Phone' class="input" name='Phone' maxlength='30' required></input>
                          <div class="focus-border"></div>
+                         <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
                        </div>
                      </div>
                    </div>
@@ -1060,8 +1069,11 @@
                      <div class="col-12">
                        <div class="formgroup">
                          <label for='Email' class="formLabel">Email<span style='color:red;'>*</span></label>
-                         <input type='text' ftype='email' id='Email' class="input" name='Email' maxlength='100'></input>
+                         <input type='text' ftype='email' id='Email' class="input" name='Email' maxlength='100' required></input>
                          <div class="focus-border"></div>
+                         <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
                        </div>
                      </div>
                    </div>
@@ -1069,8 +1081,11 @@
                      <div class="col-12">
                        <div class="formgroup">
                          <label for='Company' class="formLabel">Company<span style='color:red;'>*</span></label>
-                         <input type='text' id='Company' class="input" name='Company' maxlength='200'></input>
+                         <input type='text' id='Company' class="input" name='Company' maxlength='200' required></input>
                          <div class="focus-border"></div>
+                         <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
                        </div>
                      </div>
                    </div>
@@ -1178,6 +1193,7 @@
   
       </div>
       <div class="right-area">
+        <div class="right-area-content">
         <img class="closeDemo scheduleDemobox" src="./assets/img/icons/close-nav-icon.png" alt="close icon">
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item" role="presentation">
@@ -1216,7 +1232,7 @@
             </p> 
           </div>
         </div>
-
+        </div>
       </div>
     </div>
 
