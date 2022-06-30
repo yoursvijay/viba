@@ -1019,7 +1019,7 @@
         <div class="sidenavHeader h-100">
           <div class="scheduleDemo customForm h-100">
             <div id='crmWebToEntityForm' class='h-100'>
-              <form action='https://crm.zoho.in/crm/WebToLeadForm' class="h-100" name=WebToLeads353782000000262009 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory353782000000262009()' accept-charset='UTF-8'>
+              <form action='https://crm.zoho.in/crm/WebToLeadForm' class="h-100 needs-validation" novalidate name=WebToLeads353782000000262009 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory353782000000262009()' accept-charset='UTF-8'>
               <input type='text' style='display:none;' name='xnQsjsdp' value='3d1071879577e6e4e3da9a9683992c8df14f2288c48c97375807471e3240c457'></input> 
               <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
               <input type='text' style='display:none;' name='xmIwtLD' value='037f4c13c049ccc97b9b45ef703b6e8d8471cfca70e28537f92f9e18a06c2047'></input> 
@@ -1035,21 +1035,21 @@
                   <div class="row">
                      <div class="col-6">
                        <div class="formgroup">
-                         <label for='First_Name' class="formLabel">First Name<span style='color:red;'>*</span></label>
+                         <label for='First_Name' class="formLabel">First Name</label>
                          <input type='text' id='First_Name' class="input" name='First Name' maxlength='40' required></input>
                          <div class="focus-border"></div>
                          <div class="invalid-tooltip">
-                          Please choose a unique and valid username.
+                          Please enter first name.
                         </div>
                        </div>
                      </div>
                      <div class="col-6">
                        <div class="formgroup">
-                         <label for='Last_Name' class="formLabel">Last Name<span style='color:red;'>*</span></label>
+                         <label for='Last_Name' class="formLabel">Last Name</label>
                          <input type='text' id='Last_Name' class="input" name='Last Name' maxlength='80' required></input>
                          <div class="focus-border"></div>
                          <div class="invalid-tooltip">
-                          Please choose a unique and valid username.
+                          Please enter last name
                         </div>
                        </div>
                      </div>
@@ -1057,11 +1057,11 @@
                    <div class="row">
                      <div class="col-12">
                        <div class="formgroup">
-                         <label for='Phone' class="formLabel">Phone Number<span style='color:red;'>*</span></label>
+                         <label for='Phone' class="formLabel">Phone Number</label>
                          <input type='text' id='Phone' class="input" name='Phone' maxlength='30' required></input>
                          <div class="focus-border"></div>
                          <div class="invalid-tooltip">
-                          Please choose a unique and valid username.
+                          Please enter valid mobile number
                         </div>
                        </div>
                      </div>
@@ -1069,11 +1069,11 @@
                    <div class="row">
                      <div class="col-12">
                        <div class="formgroup">
-                         <label for='Email' class="formLabel">Email<span style='color:red;'>*</span></label>
+                         <label for='Email' class="formLabel">Email</label>
                          <input type='text' ftype='email' id='Email' class="input" name='Email' maxlength='100' required></input>
                          <div class="focus-border"></div>
                          <div class="invalid-tooltip">
-                          Please choose a unique and valid username.
+                          Please enter valid email
                         </div>
                        </div>
                      </div>
@@ -1081,11 +1081,11 @@
                    <div class="row">
                      <div class="col-12">
                        <div class="formgroup">
-                         <label for='Company' class="formLabel">Company<span style='color:red;'>*</span></label>
+                         <label for='Company' class="formLabel">Company</label>
                          <input type='text' id='Company' class="input" name='Company' maxlength='200' required></input>
                          <div class="focus-border"></div>
                          <div class="invalid-tooltip">
-                          Please choose a unique and valid username.
+                          Please enter your company name
                         </div>
                        </div>
                      </div>
@@ -1095,7 +1095,7 @@
                     <div class="row formBtns">
                       <div class="col-12">
                         <input type='submit' id='formsubmit' class='formsubmit primary-btn w-60' value='Submit'>
-                        <input type='reset' class='resetBtn' name='reset' value='Reset'>
+                        <input type='reset' id="resett" class='resetBtn' name='reset' value='Reset'>
                       </div>
                     </div>
                   </div>
@@ -1127,60 +1127,21 @@
                   return true;
                 }
     
-                  function checkMandatory353782000000262009() {
-                  var mndFileds = new Array('Company','First Name','Last Name','Email','Phone');
-                  var fldLangVal = new Array('Company','First\x20Name','Last\x20Name','Email','Phone\x20Number');
-                  for(i=0;i<mndFileds.length;i++) {
-                    var fieldObj=document.forms['WebToLeads353782000000262009'][mndFileds[i]];
-                    if(fieldObj) {
-                    if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
-                    if(fieldObj.type =='file')
-                      { 
-                      // alert('Please select a file to upload.'); 
-                      fieldObj.focus(); 
-                      return false;
-                      } 
-                    // alert(fldLangVal[i] +' cannot be empty.'); 
-                    document.fldLangVal[i].value = document.getElementsByClassName('help').innerHTML;
-                            fieldObj.focus();
-                            return false;
-                    }  else if(fieldObj.nodeName=='SELECT') {
-                          if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
-                      // alert(fldLangVal[i] +' cannot be none.'); 
-                      fieldObj.focus();
-                      return false;
-                      }
-                    } else if(fieldObj.type =='checkbox'){
-                    if(fieldObj.checked == false){
-                      // alert('Please accept  '+fldLangVal[i]);
-                      fieldObj.focus();
-                      return false;
-                      } 
-                    } 
-                    try {
-                        if(fieldObj.name == 'Last Name') {
-                      name = fieldObj.value;
-                        }
-                    } catch (e) {}
-                      }
-                  }
-                  if(!validateEmail353782000000262009()){return false;}
-                  document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-                }
+     
     
-              function tooltipShow353782000000262009(el){
-                var tooltip = el.nextElementSibling;
-                var tooltipDisplay = tooltip.style.display;
-                if(tooltipDisplay == 'none'){
-                  var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
-                  for(i=0; i<allTooltip.length; i++){
-                    allTooltip[i].style.display='none';
-                  }
-                  tooltip.style.display = 'block';
-                }else{
-                  tooltip.style.display='none';
-                }
-              }
+              // function tooltipShow353782000000262009(el){
+              //   var tooltip = el.nextElementSibling;
+              //   var tooltipDisplay = tooltip.style.display;
+              //   if(tooltipDisplay == 'none'){
+              //     var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+              //     for(i=0; i<allTooltip.length; i++){
+              //       allTooltip[i].style.display='none';
+              //     }
+              //     tooltip.style.display = 'block';
+              //   }else{
+              //     tooltip.style.display='none';
+              //   }
+              // }
               </script>
                 <!-- Do not remove this --- Analytics Tracking code starts -->
                 <script id='wf_anal' src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=037f4c13c049ccc97b9b45ef703b6e8d8471cfca70e28537f92f9e18a06c2047gid3d1071879577e6e4e3da9a9683992c8df14f2288c48c97375807471e3240c457gid534cb20477b1d28b5f45f7cc241888c5gid4ee3a7e9ace6ab1be7c541b329164307&tw=096a715cbfc30dc79d6dc215bf71c5b4284d938378e51186a6daa9337f7519a8'></script>

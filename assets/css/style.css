@@ -2193,6 +2193,9 @@ section {
   height: 100%;
   padding: 64px 135px 10px 135px;
 }
+.customForm .formgroup .invalid-tooltip{
+  background-color: #000000;
+}
 .formBody .demo-logo{
   border-radius: 50%;
 }
@@ -2244,6 +2247,7 @@ section {
 .zsiq_custommain.siq_bR{
   bottom: 25px;
   right: 25px;
+  z-index: 99 !important;
 }
 .zsiq_custommain.siq_bR::after{
   content: "";
