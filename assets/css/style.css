@@ -1895,6 +1895,30 @@ section {
   align-items: flex-start;
   column-gap: 45px;
 }
+.footer-menulist div.list li a{
+  position: relative;
+}
+.footer-menulist div.list li a:hover{
+  color: #F10877;
+}
+.footer-menulist div.list li a::after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #F10877;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  bottom: -5px;
+}
+.footer-menulist div.list li a:hover::after{
+  width: 100%;
+  left: 0;
+}
+
 @media screen and (max-width:425px){
   .footer-pair-list div.list{
     display: block;
@@ -2119,66 +2143,21 @@ section {
 
 
 
-
-.sidenav {
-  position: fixed;
-  top: 0;
-  right: -40%;
-  width: 750px;
-  height: 100%;
-  transition: 0.6s ease-in-out;
-  z-index: 999999999;
-  overflow-x: hidden;
- 
-}
-.closebtn{
-  position:absolute;
-  left: 0;
-  top: 25px;
-}
-.sidenavContent{
-  margin-left: 70px;
-  border-left: 2px solid #ff0062;
-  height: 100%;
-  background-color: #ffffff;
-  padding: 26px;
-}
-/* .sidenav::after{
-  z-index: -1; 
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: rgba(0,0,0, 0.7);
-} */
-.sidenavHeader h2{
+/* customForm */
+.formBody h2{
   font-family: "Gilroy-Medium";
   font-size: 39px;
   color: #ffffff;
   margin: 23px 0 7px;
 }
-.sidenavHeader p{
+.formBody p{
   font-family: "Gilroy-Medium";
   font-size: 16px;
   color: #ffffff;
   margin-bottom: 38px;
 }
-
-/* .sidenav::before{
-  content: url("../img/icons/close-nav-icon.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  clear: both;
-} */
-
-/* customForm */
 .customForm .formgroup{
-  margin-bottom: 30px;
+  margin-bottom: 52px;
   position: relative;
 }
 .customForm .formgroup .formLabel{
@@ -2204,7 +2183,7 @@ section {
   outline: none;
   background-color: #fff;
 }
-.customForm .formgroup .input ~ .focus-border, .multiSelect ~ .focus-border{ position: absolute;bottom: 0; left: 0; width: 0; height: 4px; background-color: #8300FB; transition: 0.4s;}
+.customForm .formgroup .input ~ .focus-border, .multiSelect ~ .focus-border{ position: absolute;bottom: 0; left: 0; width: 0; height: 6px; background-color: #000000; transition: 0.4s;}
 .customForm .formgroup .input:focus ~ .focus-border, .multiSelect:focus ~ .focus-border{width: 100%; transition: 0.4s;}
 .multiSelect:focus{border-bottom: 0 !important;}
 .formBody{
@@ -2321,15 +2300,15 @@ section {
   font-size: 50px;
   text-align: center;
 }
-.demoslidedown ul {
+/* .demoslidedown ul {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   display: inline-block;
   position: relative;
   height: 100%;
-}
-.demoslidedown ul li {
+} */
+/* .demoslidedown ul li {
   display: block;
   height: 25%;
   height: calc(100% / 4);
@@ -2360,7 +2339,7 @@ section {
   height: 3px;
   background: rgb(31, 3, 3);
   transition: 0.35s;
-}
+} */
 @keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -2389,10 +2368,12 @@ section {
 .demo-overlay .right-area{
   position: relative;
   width: 45%;
-  background-image: url("../img/demobg.png");
+  padding: 130px 46px 16px;
+  /* background-image: url("../img/demobg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
+  background-color: #8300FB;
 }
 
 .demo-overlay .right-area .closeDemo{
@@ -2401,4 +2382,38 @@ section {
   right: 20px;
   cursor: pointer;
   border-radius: 100%;
+}
+
+.right-area .nav-tabs{
+  border-bottom: 0;
+  margin-bottom: 29px;
+}
+.right-area .nav-tabs li button{
+  background-color: transparent;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  vertical-align: middle;
+  object-fit: cover;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  margin-right: 32px;
+  opacity: 0.4;
+}
+.right-area .nav-tabs li button.active{
+  opacity: 1;
+}
+.right-area .tab-content h2{
+  font-family: "Gilroy-Bold";
+  font-size: 32px;
+  color: #ffffff;
+  line-height: 50px;
+  margin-bottom: 38px;
+}
+.right-area .tab-content p{
+  font-family: "Gilroy-Regular";
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 25px;
 }
