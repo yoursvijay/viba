@@ -346,6 +346,7 @@ pricingSwitch();
     focusOnSelect: true
   } );
 
+  
 
   $( function () {
     $( '.side-by-side-carousel .slide-text' ).on( 'click', function () {
@@ -496,6 +497,46 @@ $('.scheduleDemobox').click(function() {
 
 
 $("#myForm").validate({
+  rules: {
+    First_Name: {
+        required: true,
+        minlength: 3,
+      },
+      Last_Name: {
+        required: true,
+        minlength: 3
+      },
+      Email: {
+        required: true,
+        email: true
+      },
+      Phone:{
+        required: true,
+        minlength:10
+      },
+      Company: {
+        required: false,
+      }
+
+  },
+  messages : {
+    'First Name': "Enter your first name",
+    'Last Name': "Enter your last name",
+    Email: {
+      required: "We need your email address to contact you",
+      email: "example: hello@domain.com"
+    },
+    Phone: {
+      required: "Please enter mobile numner",
+      number: "Please enter your number as a numerical value",
+      minlength: "Please enter valid number"
+    }
+  }
+});
+
+
+
+$("#contactForm").validate({
   rules: {
     First_Name: {
         required: true,

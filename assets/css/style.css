@@ -2290,6 +2290,11 @@ section {
   background-color: #000000;
   border-radius: 0.25rem;
 }
+.customForm .formgroup textarea{
+  width: 100%;
+  border-radius: 4px;
+  min-height: 64px;
+}
 
 .formBody .demo-logo{
   border-radius: 50%;
