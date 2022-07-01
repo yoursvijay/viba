@@ -519,8 +519,8 @@ $("#myForm").validate({
 
   },
   messages : {
-    First_Name: "Enter your first name",
-    Last_Name: "Enter your last name",
+    'First Name': "Enter your first name",
+    'Last Name': "Enter your last name",
     Email: {
       required: "We need your email address to contact you",
       email: "example: hello@domain.com"
