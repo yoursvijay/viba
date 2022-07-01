@@ -532,4 +532,3 @@ $("#myForm").validate({
     }
   }
 });
-
