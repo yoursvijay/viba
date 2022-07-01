@@ -131,20 +131,20 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  // on('click', '.scrollto', function(e) {
-  //   if (select(this.hash)) {
-  //     e.preventDefault()
+  on('click', '.scrollto', function(e) {
+    if (select(this.hash)) {
+      e.preventDefault()
 
-  //     let navbar = select('#navbar')
-  //     if (navbar.classList.contains('navbar-mobile')) {
-  //       navbar.classList.remove('navbar-mobile')
-  //       let navbarToggle = select('.mobile-nav-toggle')
-  //       navbarToggle.classList.toggle('bi-list')
-  //       navbarToggle.classList.toggle('bi-x')
-  //     }
-  //     scrollto(this.hash)
-  //   }
-  // }, true)
+      let navbar = select('#navbar')
+      if (navbar.classList.contains('navbar-mobile')) {
+        navbar.classList.remove('navbar-mobile')
+        let navbarToggle = select('.mobile-nav-toggle')
+        // navbarToggle.classList.toggle('bi-list')
+        // navbarToggle.classList.toggle('bi-x')
+      }
+      scrollto(this.hash)
+    }
+  }, true)
 
   /**
    * Scroll with ofset on page load with hash links in the url
@@ -453,41 +453,84 @@ $('.scheduleDemobox').click(function() {
  });
 
 
- (function () {
-  'use strict'
+//  (function () {
+//   'use strict'
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+  // var forms = document.querySelectorAll('.needs-validation')
 
   // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
+  // Array.prototype.slice.call(forms)
+  //   .forEach(function (form) {
+  //     form.addEventListener('submit', function (event) {
         // $('.needs-validation').bootstrapValidator('enableFieldValidators',
         // 'Company', false);
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+      //   if (!form.checkValidity()) {
+      //     event.preventDefault()
+      //     event.stopPropagation()
           
  
-        }
-        form.classList.add('was-validated')
+      //   }
+      //   form.classList.add('was-validated')
 
-      }, false)
-    })
+      // }, false)
+    // })
 
-    Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('reset', function (event) {
-        if (!form.checkValidity()) {
+    // Array.prototype.slice.call(forms)
+    // .forEach(function (form) {
+    //   form.addEventListener('reset', function (event) {
+    //     if (!form.checkValidity()) {
           // event.preventDefault()
-          event.stopPropagation()
-        }
+          // event.stopPropagation()
+        // }
 
-        form.classList.remove('was-validated')
-      }, false)
-    })
+    //     form.classList.remove('was-validated')
+    //   }, false)
+    // })
 
     // document.getElementById("resett").form.classList.remove('was-validated')
 
-})()
+// })()
+
+
+
+
+$("#myForm").validate({
+  rules: {
+    First_Name: {
+        required: true,
+        minlength: 3,
+      },
+      Last_Name: {
+        required: true,
+        minlength: 3
+      },
+      Email: {
+        required: true,
+        email: true
+      },
+      Phone:{
+        required: true,
+        minlength:10
+      },
+      Company: {
+        required: false,
+        minlength:10
+      }
+
+  },
+  messages : {
+    firstname: "Enter your first name",
+    lastname: "Enter your last name",
+    Email: {
+      required: "We need your email address to contact you",
+      email: "example: hello@domain.com"
+    },
+    Phone: {
+      required: "Please enter mobile numner",
+      number: "Please enter your number as a numerical value",
+      minlength: "Please enter valid number"
+    }
+  }
+});
+

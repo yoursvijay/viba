@@ -1425,6 +1425,24 @@ section {
 .plansSwiper .plan-card .plan-header{
   margin-bottom: 30px;
 }
+.offertag{
+  position: absolute;
+  padding: 10px 20px;
+  color: #fff;
+  right: 0;
+  top: 15px;
+  font-family: "Gilroy-Medium";
+  font-size: 16px;
+  letter-spacing: 0.9px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+}
+.offertag-bg1{
+  background-color: #9c02df;
+}
+.offertag-bg2{
+  background-color: #FF0968;
+}
 .plansSwiper .plan-card .plan-subhead{
   min-height: 235px;
   padding: 20px 0;
@@ -2256,9 +2274,23 @@ section {
   height: 100%;
   padding: 64px 135px 10px 135px;
 }
-.customForm .formgroup .invalid-tooltip{
+
+.customForm .formgroup label.error{
+  font-family: "Gilroy-Regular";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 5;
+  display: none;
+  max-width: 100%;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0;
+  font-size: .875rem;
+  color: #fff;
   background-color: #000000;
+  border-radius: 0.25rem;
 }
+
 .formBody .demo-logo{
   border-radius: 50%;
 }
@@ -2459,3 +2491,9 @@ section {
   color: #FF0968;
   font-size: 18px;
 }
+
+.backgroundBg{
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+}
+
