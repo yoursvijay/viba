@@ -515,13 +515,12 @@ $("#myForm").validate({
       },
       Company: {
         required: false,
-        minlength:10
       }
 
   },
   messages : {
-    firstname: "Enter your first name",
-    lastname: "Enter your last name",
+    First_Name: "Enter your first name",
+    Last_Name: "Enter your last name",
     Email: {
       required: "We need your email address to contact you",
       email: "example: hello@domain.com"
