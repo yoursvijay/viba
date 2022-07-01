@@ -2019,6 +2019,9 @@ section {
   color: #000000;
   letter-spacing: 1px;
 }
+.copyright-sec p img{
+  margin-top: -2px;
+}
 
 
 

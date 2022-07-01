@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="19.963" viewBox="0 0 22 19.963">
+  <defs>
+    <clipPath id="clip-MadewithLove">
+      <rect width="22" height="19.963"/>
+    </clipPath>
+  </defs>
+  <g id="MadewithLove" clip-path="url(#clip-MadewithLove)">
+    <path id="shape" d="M12,21.228a1,1,0,0,1-.707-.293L3.837,13.479A6.272,6.272,0,0,1,12,4a6.272,6.272,0,0,1,8.163,9.479l-7.456,7.455a1,1,0,0,1-.707.293Z" transform="translate(-1 -2.018)" fill="#6563ff"/>
+  </g>
+</svg>
