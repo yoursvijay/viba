@@ -372,7 +372,7 @@ pricingSwitch();
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     adaptiveHeight: true,
     prevArrow: $('.prev'),
@@ -402,7 +402,7 @@ pricingSwitch();
   $('.slidervideo').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     asNavFor: '.viba-mobile-app',
     dots: false,
     fade:true,
