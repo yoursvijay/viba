@@ -115,7 +115,7 @@ section {
   margin: 0;
   color: #12152F;
   text-transform: capitalize;
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy-Bold";
   position: relative;
 }
 
@@ -318,6 +318,12 @@ section {
   padding: 16px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
+.header.header-scrolled .viba-logo,.header .viba-brand-icon{
+  display: none;
+}
+.header.header-scrolled .viba-brand-icon{
+  display: block;margin-bottom: 0;
+}
 @media screen and (max-width:1366px){
   .header.header-scrolled {
     height: 80px;
@@ -352,6 +358,7 @@ section {
 .nav-left{
   display: flex;
   align-items: center;
+  transition: 0.5s ease all;
 }
 .navbar .vline{
   height: 40px;
@@ -1143,10 +1150,10 @@ section {
   justify-content: center;
   z-index: 9;
 }
-.vidThumb::before{
+/* .vidThumb::before{
   content: url("./../img/icons/play-icon.png");
   position: absolute;
-}
+} */
 
 .vidThumb::before::after{
   content: "";
@@ -1495,7 +1502,7 @@ section {
     font-family: 'Gilroy-Regular';
     font-size: 16px;
     line-height: 1.5;
-    color: #6F707E;
+    color: #000000;
     margin: 0;
     /* margin-top: 16px; */
 }
@@ -2211,7 +2218,7 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #000000;
+  background-color: #8300FB;
   margin-top: 175px;
 }
 @media screen and (max-width:1680px){

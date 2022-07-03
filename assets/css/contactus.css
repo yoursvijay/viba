@@ -1,26 +1,30 @@
 .page-banner{
-    align-items: flex-start;
-    padding-top: 20px;
+    background-color: #ffffff !important;
+    position: relative;
+    z-index: 9;
 }
-.page-banner img{
-    margin-top: 60px;
+.page-banner::after{
+    content: '';
+    height: 328px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #8300FB;
+    z-index: -1;
 }
-.page-banner h1{
-    text-align: start;
-    font-size: 38px;
-    margin: 10px 0;
-}
-.page-banner p{
-    text-align: start;
-    max-width: 80%;
-    font-size: 18px;
+.page-banner h1, .page-banner p{
+    text-align: start !important;
+    max-width: 90%;
 }
 .page-lt{
     display: flex;
     flex-direction: column;
 }
 .address{
-    padding: 40px 0 20px;
+    padding:0 0 20px;
 }
 .address h2{
     font-family: 'Gilroy-Semibold';
@@ -63,8 +67,8 @@
 .addressPool{
     border: 1px solid #e4e4e4;
     border-radius: 4px;
-    padding: 40px 20px 20px;
-    max-width: 350px;
+    padding: 60px 30px;
+    max-width: 100%;
 }
 
 
@@ -86,16 +90,21 @@
 
 
 /* ---Form--- */
+/* .form.customForm{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+} */
 .form.customForm .formBody{
-    background-color: #8300FB;
+    background-color: #FF0968;
     padding: 40px 20px;
     border-radius: 6px;
 }
 
-.form.customForm .formBody .input{
+/* .form.customForm .formBody .input{
     color: #ffffff;
     background-color: transparent;
-}
+} */
 
 .form.customForm .formBody .input:focus, .form.customForm .formBody textarea:focus{
     color: #000;
@@ -109,10 +118,11 @@
     font-family: "Gilroy-Semibold";
     font-size: 18px;
     line-height: normal;
-    color: #ffffff;
+    color: #000000;
     background-color: transparent;
     outline: none;
     padding-top: 12px;
+    background-color: #ffffff;
 }
 /* .customForm .formBody .input{
     border-color: #E4E4E4E4;

@@ -46,31 +46,32 @@
 </head>
 <body>
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top">
-        <div class="container-fluid template-width d-flex align-items-center justify-content-between">
-            <nav id="navbar" class="navbar">
-              <div class="nav-left">
-                  <a href="index.html" class="logo d-flex align-items-center">
-                   <img src="assets/img/viba-logo.svg" alt="viba-logo">
-                  </a>
-                  <div class="vline"></div>
-                  <ul class="ul-first">
-                    <li><a class="nav-link" href="product.html" target="_self">Products</a></li>
-                    <li><a class="nav-link" href="solutions.html" target="_self">Solutions</a></li>
-                    <li><a class="nav-link" href="plans-and-pricing.html" target="_self">Pricing</a></li>
-                    <li><a class="nav-link" href="contactus.html" target="_self">Contact</a></li>
-                </ul>
-              </div>
-            <ul class="lastul">
-                <li><a class="nav-link" href="https://app.viba.ai/login" target="_blank">Signin</a></li>
-                <li><a class="getstarted scheduleDemobox"  href="#">Schedule a Demo</a></li>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top">
+    <div class="container-fluid template-width d-flex align-items-center justify-content-between">
+        <nav id="navbar" class="navbar">
+          <div class="nav-left">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <img class="viba-logo" src="assets/img/viba-logo.svg" alt="viba-logo">
+                <img class="viba-brand-icon" src="assets/img/Viba-logo-icon.svg" alt="viba-logo-icon">
+              </a>
+              <div class="vline"></div>
+              <ul class="ul-first">
+                <li><a class="nav-link" href="product.html" target="_self">Product</a></li>
+                <li><a class="nav-link" href="solutions.html" target="_self">Solutions</a></li>
+                <li><a class="nav-link" href="plans-and-pricing.html" target="_self">Pricing</a></li>
+                <li><a class="nav-link" href="contactus.html" target="_self">Contact</a></li>
             </ul>
-          </nav>
-          <img src="./assets/img/icons/menu.png" class="img-fluid mobile-nav-toggle" alt="menu-icon">
-        </div>
-      </header>
-    <!-- ======= End Header ======= -->
+          </div>
+        <ul class="lastul">
+            <li><a class="nav-link" href="https://app.viba.ai/login" target="_blank">Signin</a></li>
+            <li><a class="getstarted scheduleDemobox"  href="javascript:void(0)">Schedule a Demo</a></li>
+        </ul>
+      </nav>
+      <img src="./assets/img/icons/menu.png" class="img-fluid mobile-nav-toggle" alt="menu-icon">
+    </div>
+  </header>
+<!-- ======= End Header ======= -->
 
         <!-- Hero Banner -->
         <section class="hero">
@@ -81,13 +82,13 @@
                             <h1>The AI for a winning workplace</h1>
                             <h2>Viba revolutionizes the workplace by automating employee and visitor management. The intelligent front desk AI that saves your team the endless back-and-forth discussions, paper ledgers, and excel sheet boredom.</h2>
                             <ul>
-                                <li><img src="assets/img/tick-b.png" alt="tick"><span>Employee Attendance Management</span></li>
+                                <li><img src="assets/img/tick-b.png" alt="tick"><span>Employee Management</span></li>
                                 <li><img src="assets/img/tick-b.png" alt="tick"><span>Touchless Visitor Management</span></li>
                                 <li><img src="assets/img/tick-b.png" alt="tick"><span> Meeting Rooms</span></li>
                             </ul>
                             <div class="btn-row">
-                                <a class="primary-btn" href="#">Schedule a Demo</a>
-                                <a class="secondary-btn btn-1 btn-1c" href="#" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Demo</a>
+                                <a class="primary-btn scheduleDemobox" href="javascript:void(0)">Schedule a Demo</a>
+                                <a class="secondary-btn btn-1 btn-1c" href="#" data-bs-toggle="modal" data-bs-target="#VibaVisitor">Watch Demo</a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +181,7 @@
                       </div>
                       <div class="btn-row">
                         <a class="primary-btn" href="product.html#viba-employees">Learn More</a>
-                        <a class="secondary-btn btn-1 btn-1c" href="#"><span>Watch Demo</span></a>
+                        <a class="secondary-btn btn-1 btn-1c" href="#" data-bs-toggle="modal" data-bs-target="#VibaEmployees" ><span>Watch Demo</span></a>
                       </div>
                     </div>
                   </div>
@@ -219,7 +220,7 @@
                       </div>
                       <div class="btn-row">
                         <a class="primary-btn" href="product.html#viba-visitors">Learn More</a>
-                        <a class="secondary-btn btn-1 btn-1c" href="#"><span>Watch Demo</span></a>
+                        <a class="secondary-btn btn-1 btn-1c" href="#" data-bs-toggle="modal" data-bs-target="#VibaVisitor"><span>Watch Demo</span></a>
                       </div>
                     </div>
                   </div>
@@ -246,7 +247,7 @@
                       </div>
                       <div class="btn-row">
                         <a class="primary-btn" href="product.html#viba-meeting-rooms">Learn More</a>
-                        <a class="secondary-btn btn-1 btn-1c" href="#"><span>Watch Demo</span></a>
+                        <a class="secondary-btn btn-1 btn-1c" href="#" data-bs-toggle="modal" data-bs-target="#VibaVisitor"><span>Watch Demo</span></a>
                       </div>
                     </div>
                   </div>
@@ -477,32 +478,32 @@
   
     <div class="virtual-exp-vids">
       <div class="videoBox">
-        <a href="#"  data-bs-toggle="modal" data-bs-target="#VibaClockin" class="vidThumb">
-          <img class="img-fluid" src="./assets/img/support-img.png" alt="">
+        <a href="#"  data-bs-toggle="modal" data-bs-target="#VibaEmployees" class="vidThumb">
+          <img class="img-fluid" src="./assets/img/VirtualExp_Image1.png" alt="">
         </a>
-        <h5>Employee Clockin</h5>
-        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#VibaClockin"><span>Watch Demo</span></a>
+        <h5>Employee Clock-in</h5>
+        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#VibaEmployees"><span>Watch Demo</span></a>
       </div>
       <div class="videoBox">
-        <a  href="#" data-bs-toggle="modal" data-bs-target="#VibaCheckin" class="vidThumb">
-          <img class="img-fluid" src="./assets/img/support-img.png" alt="">
+        <a  href="#" data-bs-toggle="modal" data-bs-target="#VibaVisitor" class="vidThumb">
+          <img class="img-fluid" src="./assets/img/VirtualExp_Image2.png" alt="">
         </a>
-        <h5>Touchless Visitor Checkin</h5>
-        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#VibaCheckin"><span>Watch Demo</span></a>
+        <h5>Touchless Visitor Check-in</h5>
+        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#VibaVisitor"><span>Watch Demo</span></a>
       </div>
       <div class="videoBox">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#VibaBadge" class="vidThumb">
-          <img class="img-fluid" src="./assets/img/support-img.png" alt="">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#VibaVisitor" class="vidThumb">
+          <img class="img-fluid" src="./assets/img/VirtualExp_Image3.png" alt="">
         </a>
         <h5>Visitor Badge</h5>
-        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#VibaBadge"><span>Watch Demo</span></a>
+        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#VibaVisitor"><span>Watch Demo</span></a>
       </div>
       <div class="videoBox">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#VibaDetection" class="vidThumb">
-          <img class="img-fluid" src="./assets/img/support-img.png" alt="">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#VibaTempDetection" class="vidThumb">
+          <img class="img-fluid" src="./assets/img/VirtualExp_Image4.png" alt="">
         </a>
         <h5>Abnormal Temperature</h5>
-        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#VibaDetection"><span>Watch Demo</span></a>
+        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#VibaTempDetection"><span>Watch Demo</span></a>
       </div>
     </div>
 
@@ -540,8 +541,7 @@
                 <div class="plan-header">
                   <h2>Startup</h2>
                   <div class="plan-subhead">
-                    <h3 class="text1">&#8377;999<span>/-Per month</span></h3>
-                    <h3 class="text2">&#8377;1,999<span>/-Per month</span></h3>
+                    <h3>Free</h3>
                     <p>1-20 Employees</p>
                     <div class="plus">+</div>
                     <h3>&#8377;59<span>/-Per month</span></h3>
@@ -590,7 +590,7 @@
             <div class="swiper-slide">
               <div class="plan-card">
                 <div class="plan-header">
-                  <div class="offertag text1">save 30%</div>
+                  <div class="offertag text1">save 20%</div>
                   <div class="text2"></div>
                   <h2>Business</h2>
                   <div class="plan-subhead">
@@ -803,13 +803,13 @@
       <div class="col-md-auto col-sm-6 footer-brand">
         <a class="footer-logo" href="http://viba.ai" target="_self"><img class="img-fluid" src="assets/img/viba-logo.svg" alt="viba-logo"></a>
         <h2>VIBA TECH SOLUTIONS PVT. LTD</h2>
-        <p>109 Manjeera Trinity Corporate, JNTU-Hitech Road, <br/>Kukatpally, Hyderabad - 72</p>
+        <p>109 Manjeera Trinity Corporate, <br/>JNTU-Hitech Road, Kukatpally,<br/> Hyderabad - 72</p>
         <p>Phone: <a href="tel:+ +91 90101 92299"> +91 90101 92299</a></p>
         <p>Email: <a href="mailto:sales@viba.ai">sales@viba.ai</a></p>
         <div class="social-icons">
-          <a href="https://www.facebook.com/VIBA-100562572617909" target="_blank"><img loading="lazy" src="./assets/img/icons/facebook.svg" alt="facebook"></a>
           <a href="https://www.linkedin.com/company/getviba/" target="_blank"><img loading="lazy" src="./assets/img/icons/linkedin.svg" alt="linkedin"></a>
           <a href="https://twitter.com/getviba" target="_blank"><img loading="lazy" src="./assets/img/icons/twitter.svg" alt="twitter"></a>
+          <a href="https://www.facebook.com/VIBA-100562572617909" target="_blank"><img loading="lazy" src="./assets/img/icons/facebook.svg" alt="facebook"></a>
           <a href="https://www.youtube.com/channel/UCoNWvVKBC_qIxB2pj_VDplA" target="_blank"><img loading="lazy" src="./assets/img/icons/youtube.svg" alt="youtube"></a>
         </div>
       </div>
@@ -831,14 +831,13 @@
             <ul>
               <li><a href="#">About Us</a></li>
               <li><a href="product.html">Product</a></li>
-              <!-- <li><a href="#">Features</a></li> -->
               <li><a href="solutions.html">Solutions</a></li>
               <li><a href="plans-and-pricing.html">Pricing</a></li>
               <li><a href="contactus.html">Contact</a></li>
 
             </ul>
             <ul>
-              <li><a href="#" class="scheduleDemobox">Schedule a demo</a></li>
+              <li><a href="javascript:void(0)" class="scheduleDemobox">Schedule a demo</a></li>
               <li><a href="https://app.viba.ai/login" target="_blank">Signin</a></li>
               <li><a href="#">Download Employee App</a></li>
               <li><a href="#">Download Brochure</a></li>
@@ -868,7 +867,7 @@
   <div class="container-fluid template-width copyright-sec">
     <div class="row">
       <div class="col-lg-6">
-        <p>Copyright @2022 VIBA</p>
+        <p>Copyright @2022 Viba</p>
       </div>
       <div class="col-lg-6 text-md-end">
         <p>Built with <img class="img-fluid" src="./assets/img/icons/madewithLove.svg" alt="love" /> from India</p>
@@ -880,56 +879,31 @@
 
 
 
-
-
-<!-- Video Modal start-->
-<div class="modal fade evaa-modal video-modal" id="videoModal" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <a href="#" class="close-modal" data-bs-dismiss="modal">Close</a>
-      <div class="modal-body p-0">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mOc9jc3Ibwc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    </div>
-  </div>
-</div>
-<!-- Video Modal End-->
 <!-- Viba Employees  Modal start-->
-<div class="modal fade evaa-modal video-modal" id="VibaEmp" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
+<div class="modal fade evaa-modal video-modal" id="VibaEmployees" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <a href="#" class="close-modal" data-bs-dismiss="modal">Close</a>
       <div class="modal-body p-0">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ohOjHpj3Ngw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I99JPpLpCXY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </div>
   </div>
 </div>
 <!-- Viba Employees  Modal end-->
+
 <!-- Viba Visitors  Modal start-->
 <div class="modal fade evaa-modal video-modal" id="VibaVisitor" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <a href="#" class="close-modal" data-bs-dismiss="modal">Close</a>
       <div class="modal-body p-0">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mOc9jc3Ibwc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IL8dha3yaxw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </div>
   </div>
 </div>
 <!-- Viba Visitors  Modal end-->
-<!-- Viba HR  Modal start-->
-<div class="modal fade evaa-modal video-modal" id="VibaHr" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <a href="#" class="close-modal" data-bs-dismiss="modal">Close</a>
-      <div class="modal-body p-0">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mOc9jc3Ibwc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    </div>
-  </div>
-</div>
-<!-- Viba HR  Modal end-->
 
 <!-- Viba Meeting Rooms  Modal start-->
 <div class="modal fade evaa-modal video-modal" id="VibaMeeting" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
@@ -945,56 +919,20 @@
 <!-- Viba Meeting Rooms  Modal end-->
 
 
-<!-- Employee ClockIn -->
-<div class="modal fade evaa-modal video-modal" id="VibaClockin" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
+<!-- Temperature Temp Detection: -->
+<div class="modal fade evaa-modal video-modal" id="VibaTempDetection" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <a href="#" class="close-modal" data-bs-dismiss="modal">Close</a>
       <div class="modal-body p-0">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ohOjHpj3Ngw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    </div>
-  </div>
-</div>
-<!-- End Employee ClockIn -->
-<!-- Touchless Visitor Check-in:-->
-<div class="modal fade evaa-modal video-modal" id="VibaCheckin" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <a href="#" class="close-modal" data-bs-dismiss="modal">Close</a>
-      <div class="modal-body p-0">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mOc9jc3Ibwc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    </div>
-  </div>
-</div>
-<!-- End Touchless Visitor Check-in:-->
-<!-- Visitor Badge -->
-<div class="modal fade evaa-modal video-modal" id="VibaBadge" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <a href="#" class="close-modal" data-bs-dismiss="modal">Close</a>
-      <div class="modal-body p-0">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/r37B273tT_4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    </div>
-  </div>
-</div>
-<!-- End Visitor Badge:-->
-<!-- Temperature Detection: -->
-<div class="modal fade evaa-modal video-modal" id="VibaDetection" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <a href="#" class="close-modal" data-bs-dismiss="modal">Close</a>
-      <div class="modal-body p-0">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/G72spFYb95I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WOKoujkbvss?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </div>
   </div>
 </div>
 <!-- End Temperature Detection:-->
 
-
+<!-- Schedule a demo slide dowm -->
   <div class="demoslidedown" id="demoOverlay">
     <div class="demo-overlay">
       <img class="closeDemo scheduleDemobox" src="./assets/img/icons/close-nav-icon.png" alt="close icon">
@@ -1069,48 +1007,7 @@
                   </div>
               </div>
     
-            </div>
-    
-                <script>
-                function validateEmail353782000000262009()
-                {
-                  var form = document.forms['WebToLeads353782000000262009'];
-                  var emailFld = form.querySelectorAll('[ftype=email]');
-                  var i;
-                  for (i = 0; i < emailFld.length; i++)
-                  {
-                    var emailVal = emailFld[i].value;
-                    if((emailVal.replace(/^\s+|\s+$/g, '')).length!=0 )
-                    {
-                      var atpos=emailVal.indexOf('@');
-                      var dotpos=emailVal.lastIndexOf('.');
-                      if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailVal.length)
-                      {
-                        // alert('Please enter a valid email address. ');
-                        emailFld[i].focus();
-                        return false;
-                      }
-                    }
-                  }
-                  return true;
-                }
-    
-     
-    
-              function tooltipShow353782000000262009(el){
-                var tooltip = el.nextElementSibling;
-                var tooltipDisplay = tooltip.style.display;
-                if(tooltipDisplay == 'none'){
-                  var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
-                  for(i=0; i<allTooltip.length; i++){
-                    allTooltip[i].style.display='none';
-                  }
-                  tooltip.style.display = 'block';
-                }else{
-                  tooltip.style.display='none';
-                }
-              }
-              </script>
+             </div>
                 <!-- Do not remove this --- Analytics Tracking code starts -->
                 <script id='wf_anal' src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=037f4c13c049ccc97b9b45ef703b6e8d8471cfca70e28537f92f9e18a06c2047gid3d1071879577e6e4e3da9a9683992c8df14f2288c48c97375807471e3240c457gid534cb20477b1d28b5f45f7cc241888c5gid4ee3a7e9ace6ab1be7c541b329164307&tw=096a715cbfc30dc79d6dc215bf71c5b4284d938378e51186a6daa9337f7519a8'></script>
                 <!-- Do not remove this --- Analytics Tracking code ends. -->
@@ -1129,16 +1026,6 @@
               <img class="img-fluid" src="./assets/img/icons/vid-thumb-1.png" alt="thumb">
             </button>
           </li>
-          <!-- <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#reviewtwo-tab-pane" type="button" role="tab" aria-selected="false">
-              <img class="img-fluid" src="./assets/img/icons/vid-thumb-1.png" alt="thumb">
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#reviewthree-tab-pane" type="button" role="tab"  aria-selected="false">
-              <img class="img-fluid" src="./assets/img/icons/vid-thumb-1.png" alt="thumb">
-            </button>
-          </li> -->
         </ul>
         <div class="tab-content">
           <div class="tab-pane fade show active" id="reviewone-tab-pane" role="tabpanel" aria-labelledby="reviewone-tab" tabindex="0">
@@ -1166,10 +1053,7 @@
     </div>
 
   </div>
-
-
-<!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center text-white">Top</a> -->
-
+<!-- End Schedule a demo slide dowm -->
 
 
 <!-- Vendor JS Files -->
@@ -1184,9 +1068,8 @@
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
-<!-- Live Chat -->
+<!-- Live Chat code: -->
 <script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "cdc29324da53dbe8517091ba090277f3bf64faaea0a72862f408a63436eab6b0c30f0ed1535691fc4b8d383b4c2d2a9e", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
-
 
 <!-- Cookies-->
 <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>

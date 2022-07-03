@@ -5,7 +5,7 @@
     padding-bottom:20px;
 }
 .page-cnt h2{
-    font-family: "Gilroy-Medium";
+    font-family: "Gilroy-Semibold";
     font-size: 32px;
     line-height: 1.5;
     color: #12152F;
@@ -52,13 +52,6 @@
     color: #6F707E;
 }
 
-.pr-space{
-    max-width: 500px;
-}
-.pl-space{
-    max-width: 500px;
-    margin-left: auto;
-}
 
 video{
     max-width: 900px;
