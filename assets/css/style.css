@@ -2556,6 +2556,10 @@ section {
   background: #ffffff !important;
 }
 
+
+.successPage{
+  height: 100vh !important;
+}
 .thankyou{
   background: linear-gradient(45deg,#F10877,#9702E5) !important;
 }
