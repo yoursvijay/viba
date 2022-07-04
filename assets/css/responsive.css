@@ -1,4 +1,67 @@
 @media screen and (max-width:1440px) {
+    .hero .hero-content h2{
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .hero .primary-btn, .hero .secondary-btn, .req-demo .primary-btn{
+        height: 60px;
+    }
+    .primary-btn, .secondary-btn, .navbar .getstarted, .navbar .getstarted:focus{
+        padding: 12px 30px;
+    }
+    .pro-sec .pro-cnt p{
+        font-size: 15px;
+    }
+    .pro-sec .pro-cnt ul li img{
+        width: 30px;height:30px;padding: 8px;
+    }
+    .pro-sec .pro-cnt ul li span{
+        font-size: 14px;
+    }
+    .slider-view-rt .arrows button img{
+        max-height: 45px;
+    }
+    .slider-view-rt{
+        max-width: 1000px;
+    }
+    .slider-view-lt{
+        min-width: 400px;
+        max-width: 400px;
+    }
+    .slider-view-lt .mobileimg{
+        height: 550px;
+        left: 20px;
+    }
+    .slider-view-lt .slideImg{
+        top: 15px;
+        left: 87px;
+        width: 232px;
+   }
+    .slider-view-rt .section-header{
+        padding-bottom: 10px;
+    }
+    .viba-mobile-app .slideDiv{
+        min-height: 300px;
+        max-width: 320px;
+    }
+    .viba-mobile-app div .slideDiv h3{
+        margin: 24px 0px 12px;
+        font-size: 22px;
+    }
+     .viba-mobile-app div .slideDiv p{
+        font-size: 14px;
+    }
+    
+    .req-demo-body{
+        min-height: 400px;
+    }
+    .req-demo h2{
+        font-size: 40px;
+    }
+    .req-demo p{
+        font-size: 16px;
+    }
+    
     .v-feature-nav > div button{
         padding: 20px 36px;
     }
@@ -7,6 +70,16 @@
     }
     .demo-overlay .right-area{
         padding: 110px 50px 16px 50px;
+    }
+    .footer-menulist div ul li a{
+        font-size: 15px;
+    }
+    .app-dwnlds a{
+        min-height: 69px;
+        min-width: 210px;
+    }
+    .app-dwnlds a h5{
+        font-size: 15px;
     }
 }
 
@@ -30,9 +103,6 @@
     .hero .hero-content ul li span{
         font-size: 14px;
     }
-    /* .customers-label{
-        margin:65px 0 30px;
-    } */
     .section-header h2{
         font-size: 32px;
     }
@@ -42,9 +112,7 @@
     .pro-sec .sec-header h3{
         font-size: 28px;
     }
-    .pro-sec .pro-cnt p,.pro-sec .pro-cnt ul li span, .viba-mobile-app div .slideDiv p{
-        font-size: 16px;
-    }
+
     .features-list .feature-block h2{
         font-size: 22px;
     }
@@ -57,9 +125,7 @@
     .side-by-side-carousel .slide-text > div p{
         font-size: 14px;
     }
-    .viba-mobile-app div .slideDiv h3{
-        font-size: 24px;
-    }
+
     .videoBox h5{
         font-size: 18px;
     }
@@ -91,9 +157,7 @@
     .ind-card-one .card-txt p{
         font-size: 14px;
     }
-    .support-sec{
-        padding: 60px 0 90px;
-    }
+
     .support-sec header h2{
         font-size: 40px;
     }
@@ -103,12 +167,7 @@
     .support-sec span{
         font-size: 14px;
     }
-    .req-demo h2{
-        font-size: 40px;
-    }
-    .req-demo p{
-        font-size: 16px;
-    }
+
     .page-banner h1{
         font-size: 40px;
     }
@@ -119,6 +178,9 @@
 @media screen and (max-width:1200px){
     .hero{
         height: auto;
+    }
+    .slider-view-rt .section-header{
+        max-width: 60%;
     }
     .v-feature-nav > div button{
         width: 100%;
@@ -157,6 +219,7 @@
         display: none;
     }
     .vline{display: none !important;}
+
     .plansSwiper .swiper-wrapper .swiper-slide:first-child .plan-card,
         .plansSwiper .swiper-wrapper .swiper-slide:last-child .plan-card{
         border-radius: 0;
@@ -167,9 +230,10 @@
     .slider-view-rt{
         max-width: 1100px;
     }
-    .support-sec .support-img{
-        margin-top: 0;
+    .slider-view-rt .section-header{
+        max-width: 50%;
     }
+
     .features-list {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -361,10 +425,11 @@
         position: relative;
     }
     .slider-view-lt .slideImg{
-        /* width: 100%; */
         margin: 0px auto;
         height: inherit;
-        /* position: relative; */
+        top: 16px;
+        left: 94px;
+        width: 254px;
     }
     .slider-view-lt video{
         position: absolute;
@@ -377,6 +442,9 @@
         max-width: 100%;
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .slider-view-rt .section-header{
+        max-width: 100%;
     }
     .slider-view-rt .actions-row{
         align-items: center;

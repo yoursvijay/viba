@@ -195,7 +195,8 @@
 
 
 .side-by-side-carousel{
-  padding-top: 5rem;padding-bottom: 5rem;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 .side-by-side-row{
   min-height: 580px;
@@ -301,6 +302,8 @@
   width: 100%;
   transition: all 0.3s ease-in-out;
   transition-delay: 150ms;
+  max-width: 90%;
+  margin-left: auto;
 }
 
 .side-by-side-carousel .slide-image.active {

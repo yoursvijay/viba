@@ -23,14 +23,13 @@
     display: flex;
     flex-direction: column;
 }
-.address{
-    padding:0 0 20px;
-}
+
 .address h2{
     font-family: 'Gilroy-Semibold';
-    font-size: 30px;
+    font-size: 38px;
     margin-bottom: 20px;
     color: #000000;
+    margin-top: 12rem;
 }
 .address p{
     font-family: 'Gilroy-Semibold';
@@ -72,29 +71,16 @@
 }
 
 
-@media screen and (max-width:1366px){
-    .address{
-        padding-bottom: 0;
-    }
-    .address h3{
-        margin-bottom: 15px;
-        font-size: 18px;
-    }
-    .address a, .address p{
-        font-size: 18px;
-    }
-}
-
 
 
 
 
 /* ---Form--- */
-/* .form.customForm{
-    position: absolute;
+.form.customForm{
+    position: relative;
     z-index: 999;
-    width: 100%;
-} */
+    margin-top: -150px;
+}
 .form.customForm .formBody{
     background-color: #FF0968;
     padding: 40px 20px;
@@ -127,3 +113,28 @@
 /* .customForm .formBody .input{
     border-color: #E4E4E4E4;
 } */
+
+
+@media screen and (max-width:1366px){
+    .address{
+        padding-bottom: 0;
+    }
+    .address h3{
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .address a, .address p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:991px){
+    .form.customForm{
+        margin-top: 20px;
+    }
+    .address h2{
+        margin-top: 80px;
+    }
+    .addressPool{
+        margin-bottom: 20px;
+    }
+}
