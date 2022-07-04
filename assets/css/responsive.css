@@ -65,11 +65,34 @@
     .v-feature-nav > div button{
         padding: 20px 36px;
     }
+    .formBody .demo-logo, .right-area .nav-tabs li button{
+        width: 50px;
+        height: 50px;
+    }
     .formBody{
-        padding: 40px 80px 10px 80px;
+        padding: 40px 80px 20px 80px;
+    }
+    .formBody h2{
+        font-size: 32px;
     }
     .demo-overlay .right-area{
-        padding:40px 80px 10px 80px;
+        padding:40px 80px 20px 80px;
+    }
+    .demoslidedown .customForm .formgroup{
+        margin-bottom: 42px;
+    }
+    .demoslidedown .customForm .formgroup .input{
+        height: 52px;
+    }
+    .formBtns .primary-btn, .formBtns .resetBtn{
+        padding: 15px 30px;
+    }
+    .right-area .tab-content h2{
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .demoslidedown .right-area .tab-content p{
+        font-size: 16px;
     }
     .footer-menulist div ul li a{
         font-size: 15px;
@@ -173,6 +196,9 @@
     }
     .page-banner p{
         font-size: 20px;
+    }
+    .formBody h2, .right-area .tab-content h2{
+        font-size: 28px;
     }
 }
 @media screen and (max-width:1200px){
