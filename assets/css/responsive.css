@@ -6,6 +6,9 @@
     .hero .primary-btn, .hero .secondary-btn, .req-demo .primary-btn{
         height: 60px;
     }
+    .hero-bnr-left{
+        padding-top: 30px;
+    }
     .primary-btn, .secondary-btn, .navbar .getstarted, .navbar .getstarted:focus{
         padding: 12px 30px;
     }
@@ -78,10 +81,10 @@
     .demo-overlay .right-area{
         padding:40px 80px 20px 80px;
     }
-    .demoslidedown .customForm .formgroup{
+    .customForm .formgroup{
         margin-bottom: 42px;
     }
-    .demoslidedown .customForm .formgroup .input{
+    .customForm .formgroup .input{
         height: 52px;
     }
     .formBtns .primary-btn, .formBtns .resetBtn{
@@ -128,9 +131,6 @@
     }
     .section-header h2{
         font-size: 32px;
-    }
-    .pro-sec{
-        padding-bottom: 60px;
     }
     .pro-sec .sec-header h3{
         font-size: 28px;
