@@ -49,6 +49,64 @@ h1, h2, h3, h4, h5, h6 {
 .mt-6{
   margin-top: 6rem;
 }
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#preloader img{
+  width: 72px;
+  height: 72px;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  border: 6px solid #FF0968;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+@keyframes animate-preloader {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -196,6 +254,7 @@ section {
   padding: 16px 36px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   text-transform: capitalize;
   letter-spacing: 1px;
   font-family: "Gilroy-Semibold", sans-serif;
@@ -313,7 +372,7 @@ section {
 
 
 .header.header-scrolled {
-  background: #fff;
+  background: #000;
   height: 100px;
   padding: 16px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
@@ -324,25 +383,26 @@ section {
 .header.header-scrolled .viba-brand-icon{
   display: block;margin-bottom: 0;
 }
+.header.header-scrolled .navbar li a, .header.header-scrolled .navbar li a:focus{
+  color: #ffffff;
+}
+.header.header-scrolled .getstarted{
+  background-color: #fff;
+  color: #000 !important;
+}
+.header.header-scrolled .getstarted:hover{
+  color: #000000 !important;
+}
 @media screen and (max-width:1366px){
   .header.header-scrolled {
     height: 80px;
   }
 }
-.header .logo {
-  line-height: 0;
-}
+
 .header .logo img {
   max-height: 50px;
   margin-bottom: 12px;
-}
-.header .logo span {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #012970;
-  font-family: "Gilroy-Medium", sans-serif;
-  margin-top: 3px;
+  transition: 0.5s ease;
 }
 
 /*--------------------------------------------------------------
@@ -399,16 +459,19 @@ section {
   justify-content: space-between;
   padding: 10px 0;
   margin: 0 22px;
-  font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Medium";
   font-size: 18px;
   color: #12152F;
   white-space: nowrap;
   transition: 0.3s;
 }
+.navbar li a:focus{
+  color: #12152F;
+}
 .navbar .active::after{
   width: 50%;
 }
-.inverse {
+.navbar li .inverse {
   color: #b9b9b9 !important;
 }
 @media screen and (max-width:1366px){
@@ -419,7 +482,7 @@ section {
 }
 
 .navbar li a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #F10877 !important;
+  color: #FF0968 !important;
 }
 .navbar li .getstarted, .navbar li .getstarted:focus{
   margin-right: 0;
@@ -430,19 +493,17 @@ section {
 .navbar .getstarted::after{
   display: none;
 }
-.navbar .getstarted, .navbar .getstarted:focus {
+.navbar .getstarted {
   background: #000;
   padding: 16px 50px;
   font-family: "Gilroy-semibold", sans-serif;
   color: #fff;
   border-radius: 4px;
 }
-.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
-  color: #fff;
+.navbar .getstarted:hover {
+  color: #000000;
 }
-.navbar .getstarted:hover{
-  background: #000;
-}
+
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -471,7 +532,7 @@ section {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #F10877;
+  color: #FF0968;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -651,12 +712,11 @@ section {
   font-size: 18px;
   margin-left: 22px;
 }
-.hero .primary-btn{
+.hero .primary-btn, .hero .secondary-btn{
   height: 69px;
+  min-width: 220px;
 }
-.hero .secondary-btn{
-  height: 69px;
-}
+
 
 .hero .hero-content .btn-row{
   display: flex;

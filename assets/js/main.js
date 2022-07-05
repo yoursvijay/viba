@@ -4,12 +4,20 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+  // Preloader
+  $(window).on('load', function() {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function() {
+        $(this).remove();
+      });
+    }
+  });
+
+
+
 (function() {
   "use strict";
-
-
-
-
   /**
    * Easy selector helper function
    */
@@ -430,12 +438,16 @@ $(document).ready(function() {
 
 
 // On hover disable remain items on header links
+// jQuery(function($) {
+//   $('.ul-first>li>a').hover(function() {
+//     $(this).closest('.ul-first').find('a').toggleClass('inverse');
+//   });
+// });
 jQuery(function($) {
-  $('.ul-first>li>a').hover(function() {
-    $(this).closest('.ul-first').find('a').toggleClass('inverse');
-  });
-    
+$(".ul-first li a").hover(function () {
+  $(this).toggleClass("inverse");
 });
+})
 
 
 function openNav() {
