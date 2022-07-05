@@ -585,3 +585,9 @@ $("#contactForm").validate({
     }
   }
 });
+
+
+$(".viba-visitors-only").click(function(){
+  $(".primary-plans").toggleClass("dnone");
+  $(".secondary-plans").toggleClass("dblock");
+});

@@ -17,9 +17,7 @@ body {
   font-family: "Gilroy-Regular", sans-serif;
   color: #12152F;
 }
-/* a, button, input[type=submit], input[type=reset] {
-  cursor:url('../img/icons/cursor.svg'), auto;
-} */
+
 a {
   color: #4154f1;
   text-decoration: none;
@@ -140,18 +138,7 @@ section {
     padding: 0;
   }
 }
-/* @media screen and (min-width:1440px){
-  .template-width{
-    max-width: 1440px;
-    padding: 0 80px;
-  }
-}
-@media screen and (min-width:1366px){
-  .template-width{
-    max-width: 1366px;
-    padding: 0 50px;
-  }
-} */
+
 @media screen and (max-width:1024px){
   .template-width{
     max-width: 1119px;
@@ -303,45 +290,6 @@ section {
 .btn-1c:active:after {
 	width: 100%;
 }
-
-
-
-/* .secondary-btn span{
-  font-family: 'Gilroy-Semibold';
-  font-size: 16px;
-  line-height: 150%;
-  color: #12152F !important;
-  transition: 0.5s ease all;
-} */
-/* .secondary-btn::before{
-  content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 4px;
-    padding: 2px;
-    background: linear-gradient(45deg,#F10877,#9702E5);
-    background: linear-gradient(45deg,#000,#000);
-    mask: linear-gradient(#fff 45deg 45deg) content-box, linear-gradient(#fff 45deg 45deg);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-}
-.secondary-btn:hover span {
-  transform: translateY(-4px);
-}  */
-/* .secondary-btn:hover::before, .secondary-btn:hover span {
-  margin-bottom: 3px;
-} */
-/* .secondary-btn:hover::before {
-  -webkit-mask: none !important;
-  mask: none !important;
-  z-index: -1;
-  color: #ffffff;
-} */
-
 
 
 
@@ -569,6 +517,8 @@ section {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  background-color: #fff;
+  max-width: 30px;
 }
 @media (max-width: 1024px) {
   .navbar{
@@ -583,7 +533,7 @@ section {
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    top: 30px;
+    top: 26px;
     right: 30px;
     z-index: 9;
   }
@@ -599,7 +549,7 @@ section {
   left: 0;
   bottom: 0;
   /* background:linear-gradient(287deg, #F10877 5.28%, #9702E5 100%); */
-  background-color: #efefef;
+  background-color: #000000;
   transition: 0.3s;
 }
 
@@ -1506,6 +1456,47 @@ section {
 
 .plansSwiper{
   width: 100%;
+}
+.plansSwiper .swiper-wrapper{
+  justify-content: center;
+}
+.plans-controller{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.secondary-plans{
+  display: none;
+}
+.visitors-only-switch{
+  position: absolute;
+  right: 0;
+  user-select: none;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  font-family: "Gilroy-Medium";
+  font-size: 16px;
+}
+.plans-controller .form-check-input:checked{
+  background-color: #FF0968;
+}
+.plans-controller .form-check-input:focus, .form-check-input:checked{
+  box-shadow: none;
+  border: 1px solid #FF0968;
+}
+.plans-controller .form-switch .form-check-input:focus{
+  border: 1px solid rgba(0,0,0,.25);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e") !important;
+}
+.plans-controller .form-switch .form-check-input:checked{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+}
+
+.visitors-only-switch .form-check-input{
+  width: 3rem;
+  height: 1.5rem;
+  margin: 2px 5px;
 }
 .plansSwiper .plan-card{
   border: 1px solid #E5E4ED;
@@ -2690,3 +2681,12 @@ section {
 }
 
 /* End Demoslide close button */
+
+
+
+.dnone{
+  display: none !important;
+}
+.dblock{
+  display: block !important;
+}

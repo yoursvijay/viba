@@ -244,6 +244,7 @@
     .navbar li a:after{
         display: none;
     }
+    .navbar .lastul li:nth-child(1){display: none;}
     .vline{display: none !important;}
 
     .plansSwiper .swiper-wrapper .swiper-slide:first-child .plan-card,
@@ -253,6 +254,18 @@
     .viba-pass-container{
         margin-left: 0;
     }
+    .plans-controller{
+        display: block;
+    }
+    .plansSwiper .swiper-wrapper{
+        justify-content:unset;
+      }
+      .visitors-only-switch{
+        position: unset;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 2rem;
+      }
     .slider-view-rt{
         max-width: 1100px;
     }
@@ -393,6 +406,10 @@
     .demo-overlay{
         overflow-y: auto;
     }
+    .pro-sec video{
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -454,8 +471,11 @@
         margin: 0px auto;
         height: inherit;
         top: 16px;
-        left: 94px;
+        left: 75px;
         width: 254px;
+    }
+    .slider-view-lt .mobileimg{
+        left: 0;
     }
     .slider-view-lt video{
         position: absolute;
@@ -478,6 +498,24 @@
     .virtual-exp-vids{
         row-gap: 50px;
     }
+    .viba-mobile-app .slideDiv{
+        min-height: 300px;
+        max-width: 100%;
+    }
+    .slider-view-lt .mobileimg{
+        width: 100%;
+        margin: 0px auto;
+        height: inherit;
+        position: relative;
+    }
+    .slider-view-lt .slideImg{
+        position: absolute;
+        top: 14px;
+        left: 18%;
+        width: 64%;
+        z-index: 1;
+    }
+
 }
 
 @media screen and (max-width:575px) {
@@ -492,3 +530,4 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+

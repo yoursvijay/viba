@@ -72,10 +72,6 @@
 }
 
 
-
-
-
-
 /* ---Form--- */
 .form.customForm{
     position: relative;
@@ -87,11 +83,6 @@
     padding: 40px 20px;
     border-radius: 6px;
 }
-
-/* .form.customForm .formBody .input{
-    color: #ffffff;
-    background-color: transparent;
-} */
 
 .form.customForm .formBody .input:focus, .form.customForm .formBody textarea:focus{
     color: #000;
@@ -111,10 +102,6 @@
     padding-top: 12px;
     background-color: #ffffff;
 }
-/* .customForm .formBody .input{
-    border-color: #E4E4E4E4;
-} */
-
 
 @media screen and (max-width:1366px){
     .address{
