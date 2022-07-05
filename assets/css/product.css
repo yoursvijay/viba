@@ -53,11 +53,6 @@
     align-items: center;
     gap: 20px;
 }
-.pro-sec .pro-cnt .primary-btn{
-    min-width: 152px;
-    padding: 16px 50px;
-}
-
 
 .features-list{
     display: grid;

@@ -664,7 +664,7 @@ section {
   gap: 32px;
 }
 .hero-bnr-left{
-  justify-content: space-around;
+  padding-top: 60px;
 }
 .hero-bnr-right{
   justify-content: flex-end;
@@ -937,10 +937,7 @@ section {
   max-width: 90%;
   margin-left: auto;
 }
-/* .pro-sec .pro-cnt .primary-btn{
-  min-width: 152px;
-  padding: 16px 50px;
-} */
+
 .features .features-main-tabs {
   border-bottom: 2px solid rgba(39, 16, 25, 0.06);
 }
