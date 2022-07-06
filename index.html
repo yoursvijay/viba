@@ -493,7 +493,7 @@
       <h2>Plans & Pricing</h2>
       <p>Plans for every organization of all sizes</p>
     </header>
-    <div>
+    <div class="plans-controller">
       <div class="switches-container">
         <input type="radio" id="switchMonthly" name="switchPlan"  onclick="pricingSwitch()" value="Monthly" checked="checked" />
         <input type="radio" id="switchYearly" name="switchPlan"  onclick="pricingSwitch()" value="Yearly" />
@@ -506,8 +506,12 @@
           </div>
         </div>
       </div>
+      <div class="form-check form-switch visitors-only-switch">
+        <input class="form-check-input viba-visitors-only" type="checkbox" role="switch" id="flexSwitchCheckChecked" >
+        <label class="form-check-label" for="flexSwitchCheckChecked">Only for VIBA Visitors</label>
+      </div>
     </div>
-    <div class="row">
+    <div class="row primary-plans">
       <div class="col-lg-12 d-flex">
         <div class="swiper plansSwiper">
           <div class="swiper-wrapper">
@@ -623,6 +627,111 @@
         </div>
       </div>
     </div>
+      <!-- Only for viba visitors -->
+      <div class="row secondary-plans">
+        <div class="col-lg-12 d-flex">
+          <div class="swiper plansSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="plan-card">
+                  <div class="plan-header">
+                    <h2>Startup</h2>
+                    <div class="plan-subhead">
+                      <h3>Free</h3>
+                      <p>Upto 500 Visiotrs</p>
+                      <div class="plus">+</div>
+                      <h3>&#8377;59<span>/-Per month</span></h3>
+                      <p>Per additional employee</p>
+                    </div>
+                   </div>
+                  <a href="#" class="plan-btn scheduleDemobox"><span>Contact Sales</span></a>
+                  <ul>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>2 Way Communication</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Pre-Invitations</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>SoS Alerts</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Quick Check-in</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Visiotrs Feedback</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Send Push Notifications</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Temperature Detection</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Facial Detection & Recognition</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Mask Detection</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Web Portal to Admin & HR Staff</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Ring the bell</span></li>
+                </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="plan-card">
+                  <div class="plan-header">
+                    <div class="offertag text1">save 20%</div>
+                    <div class="text2"></div>
+                    <h2>Grow</h2>
+                    <div class="plan-subhead">
+                      <h3 class="text1">&#8377;1,999<span>/-Per month</span></h3>
+                      <h3 class="text2">&#8377;2,999<span>/-Per month</span></h3>
+                      <p>Upto 1000 Visitors</p>
+                      <div class="plus">+</div>
+                      <h3>&#8377;59<span>/-Per month</span></h3>
+                      <p>Per additional employee</p>
+                    </div>
+                   </div>
+                  <a href="#" class="primary-btn scheduleDemobox"><span>Contact Sales</span></a>
+                  <ul>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>2 Way Communication</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Pre-Invitations</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>SoS Alerts</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Quick Check-in</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Visiotrs Feedback</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Send Push Notifications</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Temperature Detection</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Facial Detection & Recognition</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Mask Detection</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Web Portal to Admin & HR Staff</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Ring the bell</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="plan-card">
+                  <div class="plan-header">
+                    <div class="offertag text1">save 20%</div>
+                    <div class="text2"></div>
+                    <h2>Business</h2>
+                    <div class="plan-subhead">
+                      <h3 class="text1">&#8377;3,999<span>/-Per month</span></h3>
+                      <h3 class="text2">&#8377;4,999<span>/-Per month</span></h3>
+                      <p>Unlimited Visiotrs</p>
+                      <!-- <div class="plus">+</div>
+                      <h3 class="text1">&#8377;59<span>/-Per month</span></h3>
+                      <h3 class="text2">&#8377;59<span>/-Per month</span></h3>
+                      <p>Per additional employee</p> -->
+                    </div>
+                   </div>
+                  <a href="#" class="plan-btn scheduleDemobox"><span>Contact Sales</span></a>
+                  <ul>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>2 Way Communication</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Pre-Invitations</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>SoS Alerts</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Quick Check-in</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Visiotrs Feedback</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Send Push Notifications</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Temperature Detection</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Facial Detection & Recognition</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Mask Detection</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Web Portal to Admin & HR Staff</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Ring the bell</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Custom Branding</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>SMS & Email Campaigns</span></li>
+                    <li><img src="assets/img/tick-b.png" alt="tick"><span>Visitor Badge</span></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
   </div>
 </section>
 <!--======End Pricing======-->
