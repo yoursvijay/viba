@@ -2011,20 +2011,24 @@ section {
   display: inline-block;
 }
 .social-icons a:not(:last-child){
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .social-icons a{
   position: relative;
 }
+.social-icons a img{
+  width: 32px;
+  height: 32px;
+}
 .social-icons a:hover::after{
   content: '';
   display: block;
-  width: 58px;
-  height: 58px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   position: absolute;
-  top: -6px;
-  left: -6px;
+  top: -8px;
+  left: -8px;
   border: 2px solid #000000;
 }
 
