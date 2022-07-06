@@ -305,7 +305,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  transition: all 0.2s;
+  transition: all 0.3s ease;
   z-index: 997;
   height: 175px;
   display: flex;
@@ -401,7 +401,7 @@ section {
   width: 50%; 
   left: 0; 
 }
-.navbar li a, .navbar li a:focus {
+.navbar li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1750,7 +1750,7 @@ section {
 }
 .testimonialContainer{
   min-width: 747px;
-  min-height: 400px;
+  min-height: 420px;
   border-radius: 18px;
   background-color: #3e4268;
   position: relative;
