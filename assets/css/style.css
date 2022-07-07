@@ -636,10 +636,6 @@ section {
 }
 .hero .hero-content h1 > span{
   display: block;
-  background:linear-gradient(91deg, #000000 0%, #b5b5b5 100%);
-  padding: 0 16px;
-  width: fit-content;
-  color: #ffffff;
 }
 .hero .hero-content h2{
   font-family: "Gilroy-Medium";
