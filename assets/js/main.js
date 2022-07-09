@@ -1,8 +1,7 @@
 /**
-* Template Name: FlexStart - v1.9.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template Name:Viba
+* URL: https://viba.ai/
+* Author: Viba
 */
 
   // Preloader
@@ -147,8 +146,6 @@
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        // navbarToggle.classList.toggle('bi-list')
-        // navbarToggle.classList.toggle('bi-x')
       }
       scrollto(this.hash)
     }
@@ -305,33 +302,6 @@ pricingSwitch();
 // End Subscription plan switch
 
 
-// const myModalEl = document.getElementById('videoModal')
-// myModalEl.addEventListener('hidden.bs.modal', event => {
-//   var $if = $(event.delegateTarget).find('iframe');
-//   var src = $if.attr("src");
-//   $if.attr("src", '/index.html');
-//   $if.attr("src", src);
-// })
-
-//   // modal js start
-//   $('#videoModal').on('hide.bs.modal', function(e) {    
-//     alert('hello');
-//     var $if = $(e.delegateTarget).find('iframe');
-//     var src = $if.attr("src");
-//     $if.attr("src", '/index.html');
-//     $if.attr("src", src);
-//     }); 
-
-
-// $('#videoModal').on('shown.bs.modal', function () {
-//   $('.video-modal').modal('show')
-// })
-
-// var myModalEl = document.getElementById('videoModal')
-// myModalEl.addEventListener('hide.bs.modal', function (event) {
-//   // do something...
-// })
-
   // modal js start
   $('.video-modal').on('hidden.bs.modal', function(e) {    
     var $if = $(e.delegateTarget).find('iframe');
@@ -341,10 +311,6 @@ pricingSwitch();
   });
 
 
-  // var myModal = document.getElementById('videoModal')
-  // myModal.addEventListener('hidden.bs.modal', function () {
-  //   alert('hello')
-  // })
 
   $( '.side-by-side-carousel .mobile-section' ).addClass( 'with-slick-arrows' ).slick( {
     mobileFirst: true,
@@ -437,12 +403,6 @@ $(document).ready(function() {
 });
 
 
-// On hover disable remain items on header links
-// jQuery(function($) {
-//   $('.ul-first>li>a').hover(function() {
-//     $(this).closest('.ul-first').find('a').toggleClass('inverse');
-//   });
-// });
 jQuery(function($) {
 $(".ul-first li a").hover(function () {
   $(this).toggleClass("inverse");
@@ -464,47 +424,6 @@ $('.scheduleDemobox').click(function() {
   e.preventDefault()
 
  });
-
-
-//  (function () {
-//   'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  // var forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  // Array.prototype.slice.call(forms)
-  //   .forEach(function (form) {
-  //     form.addEventListener('submit', function (event) {
-        // $('.needs-validation').bootstrapValidator('enableFieldValidators',
-        // 'Company', false);
-      //   if (!form.checkValidity()) {
-      //     event.preventDefault()
-      //     event.stopPropagation()
-          
- 
-      //   }
-      //   form.classList.add('was-validated')
-
-      // }, false)
-    // })
-
-    // Array.prototype.slice.call(forms)
-    // .forEach(function (form) {
-    //   form.addEventListener('reset', function (event) {
-    //     if (!form.checkValidity()) {
-          // event.preventDefault()
-          // event.stopPropagation()
-        // }
-
-    //     form.classList.remove('was-validated')
-    //   }, false)
-    // })
-
-    // document.getElementById("resett").form.classList.remove('was-validated')
-
-// })()
-
 
 
 
@@ -591,3 +510,6 @@ $(".viba-visitors-only").click(function(){
   $(".primary-plans").toggleClass("dnone");
   $(".secondary-plans").toggleClass("dblock");
 });
+
+
+

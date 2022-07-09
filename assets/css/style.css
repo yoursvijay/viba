@@ -1021,63 +1021,6 @@ section {
   }
 }
 
-.v-feature-nav > div{
-  flex-direction: column;
-  align-items: flex-start;
-  border: none;
-}
-.v-feature-nav > div button{
-  position: relative;
-  text-align: left;
-  width: 100%;
-  padding: 25px 36px;
-  border:0!important;
-  border-radius: 4px;
-  margin-bottom: 0 !important;
-  background-color: transparent !important;
-}
-.v-feature-nav > div button h4{
-  font-family: "Gilroy-Semibold";
-  font-size: 18px;
-  color: #12152F;
-  margin: 0;
-}
-.v-feature-nav > div button span{
-  display: block;
-  font-family: "Gilroy-Medium";
-  font-size: 14px;
-  color: #12152F;
-  line-height: 1.5;
-  margin-top: 8px;
-}
-.v-feature-nav > div button.active{
-  box-shadow: 0 5px 25px rgb(0 0 0 / 10%);
-}
-.v-feature-nav > div button.active h4{
-  color: #F10877; font-family: 'Gilroy-Bold';
-}
-/* .v-feature-nav > div button.active::before{
-  content: '';
-  position: absolute;
-  width: 6px;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background-color: #FF0062;
-} */
-
-.v-feature-nav .primary-btn{
-  display: inline-block;
-  margin-top: 22px;
-  margin-left: 36px;
-  box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
-  -webkit-box-shadow: 0px 14px 17px rgba(154, 143, 143, 0.25), 0px 22px 28px -15px rgba(136, 104, 212, 0.2);
-}
-.features-main-content{
-  margin-top: 90px;
-}
-
-
 
 
 
@@ -1164,10 +1107,7 @@ section {
   justify-content: center;
   z-index: 9;
 }
-/* .vidThumb::before{
-  content: url("./../img/icons/play-icon.png");
-  position: absolute;
-} */
+
 
 .vidThumb::before::after{
   content: "";
@@ -1191,19 +1131,6 @@ section {
 }
 
 .activeVid::after{
-  /* content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  margin: 0;
-  display: block;
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(45deg, #F10877 15%, #F10877 15%);
-  border-radius: 50%;
-  -webkit-animation: pulse-border 1500ms ease-out infinite;
-  animation: pulse-border 1500ms ease-out infinite; */
-
   content: '';
   position: absolute;
   border: 2px rgba(255, 255, 255, 100%) solid;
@@ -1245,12 +1172,6 @@ section {
 .videoBox a span{
   color: #fff !important;
 }
-/* .videoBox h5{
-  font-family: 'Gilroy-Bold';
-  font-size: 18px;
-  line-height: normal;
-  color: #fff;
-} */
 
 .vid-tabs li button{
   background-color: transparent;
@@ -1623,16 +1544,6 @@ section {
   transform: translateY(-4px);
 } 
 
-/* .plan-btn:hover::before{
-  -webkit-mask:none !important; 
-  mask:none !important; 
-  z-index: -1;
-  color: #ffffff;
-}
-.plan-btn:hover::before , .plan-btn:hover span{
-  color: #ffffff !important;
-} */
-
 .plansSwiper .plan-card .primary-btn{
   height: 59px;
   width: 100%;
@@ -1642,96 +1553,6 @@ section {
 
  .secondary-plans .plan-card .plan-subhead{
   min-height: 110px;
-}
-
-
-/*--------------------------------------------------------------
-# Industries Section
---------------------------------------------------------------*/
-.industries{
-  background-image: url("../../assets/img/mob-app-bg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 216px 0 138px;
-}
-.industries .section-header{
-  position: absolute;
-  top: 80px;
-}
-.industries div.row{
-  align-items: flex-end;
-}
-.industries .card:not(.event-bg){
-  width: 390px;
-}
-.ind-card-one{
-  min-height: 508px;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 70px 37px;
-  border-radius: 30px;
-  border: 0;
-  margin-bottom: 38px;
-}
-.card-white{
-  background: #FFFFFF;
-  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
-}
-.ind-card-one .card-txt h3{
-  font-family: 'Gilroy-SemiBold';
-  font-size: 24px;
-  line-height: 1.5;
-  color: #12152F;
-}
-.ind-card-one .card-txt p{
-  font-family: 'Gilroy-Medium';
-  font-size: 16px;
-  line-height: 1.5;
-  color: #6F707E;
-  margin-bottom: 0;
-}
-.ind-card-two{
-  min-height: 343px;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 70px 37px 40px;
-  border-radius: 30px;
-  border: 0;
-  margin-bottom: 38px;
-}
-.ind-card-two .card-txt h3{
-  font-family: 'Gilroy-SemiBold';
-  font-size: 24px;
-  line-height: 1.5;
-  color: #ffffff;
-}
-.ind-card-two .card-txt p{
-  font-family: 'Gilroy-Medium';
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
-  margin-bottom: 0;
-}
-.it-bg{
-  background: #FFD5EC;
-}
-.hs-bg{
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/hs-bg.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-size: 100%;
-}
-.event-bg{
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/event-bg-2.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-size: 100%;
-  margin-right: 1rem;
-}
-.industries a.primary-btn{
-  margin: 92px 0 16px;
-  box-shadow: 0px 22px 28px -15px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -1862,26 +1683,11 @@ section {
 .support-sec header{
   position: relative;
 }
-/* .support-sec header h2{
-  font-family: 'Gilroy-Regular';
-  font-size: 104px;
-  line-height: 1.1;
-  color: #12152F;
-  position: relative;
-  z-index: 3;
-} */
+
 .support-sec header > img{
   margin-bottom: 16px;
 }
-/* .support-sec header span{
-    font-family: 'Gilroy-Medium';
-    font-size: 16px;
-    line-height: 1.5;
-    color: #12152F;
-} */
-/* .support-sec  .support-img{
-  margin-top: -222px;
-} */
+
 .support-sec  .support-img{
   position: relative;
   display: block;
@@ -2692,11 +2498,10 @@ section {
 
 /* End Demoslide close button */
 
-
-
 .dnone{
   display: none !important;
 }
 .dblock{
   display: block !important;
 }
+

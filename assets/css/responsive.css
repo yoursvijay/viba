@@ -208,9 +208,7 @@
     .slider-view-rt .section-header{
         max-width: 60%;
     }
-    .v-feature-nav > div button{
-        width: 100%;
-    }
+
     .virtualexp .tab-content .tab-pane > div{
         align-items: center;
     }
@@ -223,9 +221,7 @@
         position: relative;
         top: 0;
     }
-    .industries .card{
-        width: 100% !important;
-    }
+
     .testimonialContainer{
         min-width: 100%;
     }
@@ -446,9 +442,7 @@
 
 @media screen and (max-width:767px) {
 
-    .industries div.row{
-        align-items: flex-start;
-    }
+
     .testIndicators{
         display: none;
     }
